@@ -1,0 +1,52 @@
+<form #productForm="ngForm" class="editForm" novalidate>
+
+  <div class="tab-pane fade in active">
+
+    <div class='row'>
+      <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10'>
+
+        <!-- Order Item -->
+        <div *ngFor="let item of product.orderItems; let ix = index">
+          <app-order-item
+            (onItemChanged)="onItemChanged($event)"
+            [item]="item" [index]="ix">
+          </app-order-item>
+        </div>
+
+        <!-- Add another product -->
+        <div>
+          <i class="fa fa-plus-circle" aria-hidden="true" (click)="onClickAdd()">&nbsp;&nbsp;Add another product</i>
+        </div>
+
+        <!-- Separate line -->
+        <hr style="border-color: #AAAAAA;">
+
+        <!-- order Total -->
+        <div>
+          <span class="pull-right">Order Total: <strong>${{totalAmount}}</strong></span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="spacer"></div>
+
+    <!-- Navigation Buttons -->
+    <div class='row'>
+      <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10'>
+        <div class="form-group text-center pull-right">
+          <button
+            uiSref="billing"
+            class="btn btn-outline-rounded btn-primary"
+            [disabled]="!productForm.valid"
+            (click)="save(productForm)"> Next Step: Contact & Billing
+            <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</form>

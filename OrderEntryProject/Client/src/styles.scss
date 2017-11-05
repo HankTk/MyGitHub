@@ -1,0 +1,34 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.25em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Lato, helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+h2, strong {
+  color: #4098d7;
+}
+
+h2, h3 {
+  margin: 0 0 5px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* spacer */
+.spacer {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}

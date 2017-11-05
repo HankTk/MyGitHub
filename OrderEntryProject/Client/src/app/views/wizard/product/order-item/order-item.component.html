@@ -1,0 +1,93 @@
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-xs-1" style="text-align: right">
+      <span class="badge">{{index+1}}</span>
+    </div>
+
+    <div class="col-xs-5">
+      <span>Select Your Product</span>
+
+      <!-- Product -->
+      <fieldset class="dropdown" style="margin-top: 5px;">
+        <span>Product</span>
+        <div class="btn-group" dropdown  style="width: 100%; text-align: left;">
+          <button dropdownToggle type="button" class="btn btn-default dropdown-toggle" style="width: 100%; text-align: left;">
+            {{form_product}}
+            <span class="caret pull-right"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem" *ngFor="let option of products" [value]="option.product_name" (click)="onSelectProduct(option)">
+              <a class="dropdown-item">{{ option.product_name }}</a>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+
+      <!-- Deployment Option -->
+      <fieldset class="dropdown" style="margin-top: 5px;">
+        <span>Deployment Option</span>
+        <div class="btn-group" dropdown  style="width: 100%; text-align: left;">
+          <button dropdownToggle type="button" class="btn btn-default dropdown-toggle" style="width: 100%; text-align: left;">
+            {{form_deployment}}
+            <span class="caret pull-right"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem" *ngFor="let option of deployments" [value]="option.deployment_name" (click)="onSelectDeployment(option)">
+              <a class="dropdown-item">{{ option.deployment_name }}</a>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+
+      <!-- Model -->
+      <fieldset class="dropdown" style="margin-top: 5px;" [disabled]="!isProductSelected">
+        <span>Model</span>
+        <div class="btn-group" dropdown  style="width: 100%; text-align: left;">
+          <button dropdownToggle type="button" class="btn btn-default dropdown-toggle" style="width: 100%; text-align: left;">
+            {{form_model}}
+            <span class="caret pull-right"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem" *ngFor="let option of models" [value]="option.model_name" (click)="onSelectModel(option)">
+              <a class="dropdown-item">{{ option.model_name }}</a>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+
+    </div>
+
+    <div class="col-xs-2">
+      <span>Quantity</span>
+      <div>
+        <input type="number" value={{item.qty}}
+               style="margin-top: 5px; text-align: center"
+               min="1" step="1" data-number-to-fixed="0"
+               (change)="onChangeQty($event)"/>
+      </div>
+    </div>
+
+    <div class="col-xs-2">
+      <span>Price</span>
+      <div>
+        <label type="text" style="margin-top: 5px;">${{item.qty * item.listprice}}</label>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- HT:9/20/17, Not in Design Spec -->
+  <div class="row">
+    <div class="col-xs-9">
+      <button type="button" class="btn btn-danger pull-right" (click)="onClickRemove()">Remove</button>
+    </div>
+  </div>
+  <!-- -->
+
+  <div class="row col-xs-10">
+    <hr style="border-top: dotted 2px; border-color: #cccccc;">
+  </div>
+
+</div>

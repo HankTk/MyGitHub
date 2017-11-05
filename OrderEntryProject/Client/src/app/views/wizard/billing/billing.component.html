@@ -1,0 +1,88 @@
+<form #billingForm="ngForm" class="editForm" novalidate>
+
+  <div class="tab-pane fade in active">
+
+    <div class='row'>
+      <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10'>
+
+        <!-- First Name / Last Name -->
+        <div class="row">
+          <div class='col-xs-12 col-sm-6'>
+            <div class="form-group">
+              <label class="control-label" for="firstname">First Name</label>
+              <input class="form-control input-md" #firstname="ngModel" required id="firstname" name="firstname"
+                     type="text" placeholder="First Name" [(ngModel)]="billing.firstName">
+            </div>
+          </div>
+          <div class='col-xs-12 col-sm-6'>
+            <div class="form-group">
+              <label class="control-label" for="lastname">Last Name</label>
+              <input class="form-control input-md" #lastname="ngModel" required id="lastname" name="lastname"
+                     type="text" placeholder="Last Name" [(ngModel)]="billing.lastName">
+            </div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label class="control-label" for="email">Email</label>
+          <input class="form-control input-md" #email="ngModel" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+                 id="email" name="email" type="text" placeholder="Email" [(ngModel)]="billing.email">
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+          <label class="control-label" for="street">Street Billing</label>
+          <input class="form-control input-md" #street="ngModel" required id="street" name="street" type="text"
+                 placeholder="Street Billing" [(ngModel)]="billing.street">
+        </div>
+
+        <!-- City, State, Zip -->
+        <div class="row">
+          <div class='col-xs-12 col-sm-4'>
+            <div class="form-group">
+              <label class="control-label" for="city">City</label>
+              <input class="form-control input-md" #city="ngModel" required id="city" name="city" type="text"
+                     placeholder="City" [(ngModel)]="billing.city">
+            </div>
+          </div>
+          <div class='col-xs-4 col-sm-offset-1 col-sm-3'>
+            <div class="form-group">
+              <label class="control-label" for="state">State</label>
+              <input class="form-control input-md" #state="ngModel" required id="state" name="state" type="text"
+                     placeholder="State" [(ngModel)]="billing.state">
+            </div>
+          </div>
+          <div class='col-xs-offset-1 col-xs-7 col-sm-offset-1 col-sm-3'>
+            <div class="form-group">
+              <label class="control-label" for="zip">Zip</label>
+              <input class="form-control input-md" #zip="ngModel" required id="zip" name="zip" type="text"
+                     placeholder="Zip" [(ngModel)]="billing.zip">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="spacer"></div>
+
+    <!-- Navigation Buttons -->
+    <div class='row'>
+      <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10'>
+        <div class="form-group text-center pull-right">
+          <button
+            uiSref="product"
+            class="btn btn-outline-rounded btn-primary"
+            (click)="save(billingForm)">
+            <span style="margin-right:10px;" class="glyphicon glyphicon-arrow-left"></span>Previous Step: Select
+            Products
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</form>
