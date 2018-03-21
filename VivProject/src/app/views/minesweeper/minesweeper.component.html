@@ -1,0 +1,46 @@
+<div class="baseContainer"
+     [style.width]="tableWidth"
+     [style.height]="tableHeight">
+
+  <div class="controlArea">
+    <!-- New Game -->
+    <button type="button" class="btn btn-outline-primary btn-sm"
+            style="width: 100px; height: 30px;"
+            (click)="onClickNewGame()">New Game</button>
+    <!-- Timer -->
+    <app-timer #timer
+               style="width: 100px; height: 30px; margin-left: 20px;">
+    </app-timer>
+
+  </div>
+
+  <div class="numberArea">
+    <!-- size -->
+    <input [(ngModel)]="tableSize" placeholder="Square size"
+           type="number" name="numSize" min="5" max="30"
+           style="width: 100px; height: 30px;">
+    <!-- mine -->
+    <input [(ngModel)]="numberOfMines"  placeholder="Mining number"
+           type="number" name="numMine" min="1" max="30"
+           style="width: 100px; height: 30px; margin-left: 20px;">
+  </div>
+
+  <div class="tableAare">
+    <table class="mainTable">
+      <tr *ngFor="let rtile of tilesMatrix; let irow = index">
+        <td *ngFor="let tile of rtile; let icol = index">
+          <app-tile
+            [tile]="tile"
+            id="tile-{{tile.index}}"
+            (onOpened)="onOpened($event)">
+          </app-tile>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="messageArea">
+    {{message}}
+  </div>
+
+</div>
