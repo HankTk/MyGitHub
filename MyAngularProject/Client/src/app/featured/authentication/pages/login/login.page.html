@@ -1,0 +1,55 @@
+<!--
+  Application Login Form
+-->
+  <div class="py-5 my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div class="card text-white p-5 bg-dark">
+            <div class="card-body">
+
+              <h1 class="mb-4">Login</h1>
+
+              <form #form="ngForm">
+
+                <div class="form-group"><label>Username</label>
+                  <input
+                    name="username"
+                    type="text" class="form-control" placeholder="Enter username"
+                    required
+                    [(ngModel)]="form_username"
+                    #username="ngModel">
+                  <span class="help-block"
+                    *ngIf="(username.invalid && username.touched)">Enter username
+                  </span>
+                </div>
+
+                <div class="form-group"><label>Password</label>
+                  <input
+                    name="password"
+                    type="password" class="form-control" placeholder="Enter password"
+                    required
+                    [(ngModel)]="form_password"
+                    #password="ngModel">
+                  <span class="help-block"
+                        *ngIf="(password.invalid && password.touched)">Enter password
+                  </span>
+                </div>
+
+                <button
+                  name="btnLogin" type="submit"
+                  class="btn btn-primary"
+                  (click)="onClickLogin(form)">Login</button>
+
+                <span class="help-block" style="margin-left: 20px;">{{message}}</span>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

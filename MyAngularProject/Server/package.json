@@ -1,0 +1,29 @@
+{
+  "name": "TestReduxPOC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "start:server1": "cross-env NODE_ENV=server1 APP_PORT=3001 SOCKET_PORT=3051 node ./src/server.js",
+    "start:server2": "cross-env NODE_ENV=server2 APP_PORT=3002 SOCKET_PORT=3052 node ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "json-server": "^0.12.1",
+    "jsonwebtoken": "^8.2.0",
+    "lodash": "^4.17.5",
+    "opts": "^1.2.6",
+    "redis": "^2.8.0",
+    "socket.io": "^2.0.4",
+    "socket.io-redis": "^5.2.0",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4"
+  }
+}
