@@ -1,0 +1,6 @@
+/OrderEntryProject/Server/node_modules
+/OrderEntryProject/Client/node_modules
+/OrderEntryProject/.idea
+/TwoPoreProject/node_modules
+/TwoPoreProject/.idea
+.DS_Store
