@@ -1,6 +1,6 @@
 const express = require('express');
 const fs = require('fs');
-const config = require('../config/config.json');
+const config = require('../../config/config.json');
 const jwt = require('jsonwebtoken');
 
 // Word for create signature and expires(1 Hour)

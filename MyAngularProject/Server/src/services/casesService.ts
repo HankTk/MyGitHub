@@ -1,9 +1,9 @@
 'use strict';
 
-var fs = require('fs');
-var _ = require('lodash');
-var config = require('../config/config.json');
-var uuid = require('uuid');
+const fs = require('fs');
+const  _ = require('lodash');
+const  config = require('../../config/config.json');
+const  uuid = require('uuid');
 
 /**
  * TodoService
@@ -17,7 +17,6 @@ class CasesService {
      * @param socket
      */
     constructor(socket) {
-
         // Socket
         this.socket = socket;
 
@@ -29,7 +28,8 @@ class CasesService {
      * getAll
      *
      */
-    getAll(req, res) {
+    public getAll(req, res) {
+        console.log('service: getAll');
         // Get JSON Data
         var modelObject = this.getObject();
 

@@ -6,7 +6,7 @@ const server = require('http').Server(app);
 const socketio = require('socket.io')(server);
 
 // Socket port
-var socket_port = (process.env.SOCKET_PORT || 3050);
+const socket_port = (process.env.SOCKET_PORT || 3050);
 
 /**
  * Redis
