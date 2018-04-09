@@ -1,21 +1,20 @@
-import express = require('express');
-import mongoose = require('mongoose');
-import cookieParser = require('cookie-parser');
-import logger = require('morgan');
-import compression = require('compression');
-import helmet = require('helmet');
-import cors = require('cors');
-import path = require('path');
-import bodyParser = require('body-parser');
-import jsonServer = require('json-server');
+import {Request, Response, Router} from 'express';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
+import compression from 'compression';
+import helmet from 'helmet';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import jsonServer from 'json-server';
 
-import socketio = require('./socket');
+// Socket
+const socketio = require('./socket');
 
 // Config
-import config = require('../config/config.json');
+const config = require('../config/config.json');
 
 // Routers
-import authenticateRouter = require('./routers/authenticateRouter');
+const authenticateRouter = require('./routers/authenticateRouter');
 import CasesRouter from './routers/casesRouter';
 
 /**
@@ -72,7 +71,7 @@ class Server {
         this.server.use(jsonServer.defaults());
 
         // cors
-        this.server.use((req, res, next) => {
+        this.server.use((req: Request, res: Response, next: any) => {
             res.header('Access-Control-Allow-Origin', 'http://localhost:*');
             res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
             res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization, Access-Control-Allow-Credentials');

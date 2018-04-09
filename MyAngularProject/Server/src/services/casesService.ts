@@ -192,7 +192,7 @@ class CasesService {
     getObject() {
         // Get JSON Data
         const file = fs.readFileSync(config.databaseFile);
-        const json = JSON.parse(file);
+        const json = JSON.parse(file.toString());
         return json[this.modelName];
     }
 
@@ -203,7 +203,7 @@ class CasesService {
     writeFile(modelObject: any) {
         // Get JSON Data
         const file = fs.readFileSync(config.databaseFile);
-        const json = JSON.parse(file);
+        const json = JSON.parse(file.toString());
         json[this.modelName] = modelObject;
         fs.writeFileSync(config.databaseFile, JSON.stringify(json, null, '\t'));
     }

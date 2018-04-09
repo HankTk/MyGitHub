@@ -7,7 +7,7 @@ import CasesSevice from '../services/casesService';
  */
 export default class CasesRouter {
 
-    private router: Router;
+    public router: Router;
 
     /**
      * constructor
