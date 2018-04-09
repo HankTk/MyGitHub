@@ -7,16 +7,14 @@ import CasesSevice from '../services/casesService';
  */
 export default class CasesRouter {
 
-    public router: Router;
-    public socketio: any;
+    private router: Router;
 
     /**
      * constructor
      *
      */
-    constructor(socketio) {
+    constructor(private socketio: any) {
         this.router = Router();
-        this.socketio = socketio;
     }
 
     /**

@@ -82,7 +82,7 @@ class Server {
     }
 
     /**
-     * routes -.server.ication routes
+     * routes - api / authentication routes
      *
      */
     public routes(): void {

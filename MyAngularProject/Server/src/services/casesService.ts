@@ -1,40 +1,44 @@
 'use strict';
 
-const fs = require('fs');
-const  _ = require('lodash');
-const  config = require('../../config/config.json');
-const  uuid = require('uuid');
+import {Request, Response, Router} from 'express';
+import fs from 'fs';
+import uuid from 'uuid';
+import _ from 'lodash';
+const config = require('../../config/config.json');
 
 /**
  * TodoService
  *
  */
+export default
 class CasesService {
+
+    private socket: any;
+
+    // Model Name
+    private modelName = 'cases';
 
     /**
      * constructor
      *
      * @param socket
      */
-    constructor(socket) {
+    constructor(socket:any) {
+
         // Socket
         this.socket = socket;
-
-        // Model Name
-        this.modelName = 'cases';
     }
 
     /**
      * getAll
      *
      */
-    public getAll(req, res) {
-        console.log('service: getAll');
+    getAll(req: Request, res: Response) {
         // Get JSON Data
-        var modelObject = this.getObject();
+        const modelObject = this.getObject();
 
         // Filter Result
-        var data = modelObject;
+        const data = modelObject;
 
         // Respnse
         res.jsonp(data);
@@ -44,15 +48,15 @@ class CasesService {
      * getById
      *
      */
-    getById(req, res) {
+    getById(req: Request, res: Response) {
         // Get JSON Data
-        var modelObject = this.getObject();
+        const modelObject = this.getObject();
 
         // Parameters
-        var id = req.params.id;
+        const id = req.params.id;
 
         // Filter Result
-        var data = _.find(modelObject, {id:id});
+        const data = _.find(modelObject, {id:id});
 
         // Respnse
         res.jsonp(data);
@@ -62,18 +66,18 @@ class CasesService {
      * updateById
      *
      */
-    updateById(req, res) {
+    updateById(req: Request, res: Response) {
         // Get JSON Data
-        var modelObject = this.getObject();
+        let modelObject = this.getObject();
 
         // Parameters
-        var id = req.params.id;
+        const id = req.params.id;
 
         // Filter Result
-        var data = _.find(modelObject, {id:id});
+        const data = _.find(modelObject, {id:id});
 
         // Update Data
-        var reqData = req.body;
+        const reqData = req.body;
         this.updateData(data, reqData);
 
         // Write back to file
@@ -90,16 +94,16 @@ class CasesService {
      * create
      *
      */
-    create(req, res) {
+    create(req: Request, res: Response) {
         // Get JSON Data
-        var modelObject = this.getObject();
+        const modelObject = this.getObject();
 
         // Filter Result
-        var data = {};
+        let data = {};
 
         // Update Data
         const nextId = uuid();
-        var reqData = req.body;
+        const reqData = req.body;
         reqData.id = nextId;
         this.updateData(data, reqData);
 
@@ -120,21 +124,21 @@ class CasesService {
      * deleteById
      *
      */
-    deleteById(req, res) {
+    deleteById(req: Request, res: Response) {
         // Get JSON Data
-        var modelObject = this.getObject();
+        let modelObject = this.getObject();
 
         // Parameters
-        var id = req.params.id;
+        const id = req.params.id;
 
         // Filter Result
-        var data = _.find(modelObject, {id:id});
+        const data = _.find(modelObject, {id:id});
 
         // Remove Object
         /* ES6
         modelObject = modelObject.filter(t => t.id !== id);
         */
-        modelObject = modelObject.filter(function(element, index, array) {
+        modelObject = modelObject.filter(function(element: any, index: any, array: any) {
             return (element.id !== id);
         });
 
@@ -152,9 +156,9 @@ class CasesService {
      * deleteAll
      *
      */
-    deleteAll(req, res) {
+    deleteAll(req: Request, res: Response) {
         // Get JSON Data
-        var modelObject = this.getObject();
+        let modelObject = this.getObject();
 
         // Remove All Object
         modelObject = [];
@@ -175,8 +179,8 @@ class CasesService {
      * @param data
      * @param reqData
      */
-    updateData(data, reqData) {
-        for (var p in reqData) {
+    updateData(data:any, reqData:any) {
+        for (let p in reqData) {
             data[p] = reqData[p];
         }
     }
@@ -187,8 +191,8 @@ class CasesService {
      */
     getObject() {
         // Get JSON Data
-        var file = fs.readFileSync(config.databaseFile);
-        var json = JSON.parse(file);
+        const file = fs.readFileSync(config.databaseFile);
+        const json = JSON.parse(file);
         return json[this.modelName];
     }
 
@@ -196,10 +200,10 @@ class CasesService {
      * writeFile
      *
      */
-    writeFile(modelObject) {
+    writeFile(modelObject: any) {
         // Get JSON Data
-        var file = fs.readFileSync(config.databaseFile);
-        var json = JSON.parse(file);
+        const file = fs.readFileSync(config.databaseFile);
+        const json = JSON.parse(file);
         json[this.modelName] = modelObject;
         fs.writeFileSync(config.databaseFile, JSON.stringify(json, null, '\t'));
     }
@@ -208,9 +212,9 @@ class CasesService {
      * emitEvent
      *
      */
-    emitEvent(action, data) {
+    emitEvent(action: any, data: any) {
         // Event Object
-        var res_object = {
+        const res_object = {
             "model": this.modelName,
             "action": action,
             "item": data
@@ -224,5 +228,3 @@ class CasesService {
     }
 
 }
-
-module.exports = CasesService;
