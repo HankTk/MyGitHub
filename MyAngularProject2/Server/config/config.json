@@ -1,0 +1,7 @@
+{
+  "//": "JSON Database",
+  "databaseFile": "./data/db.json",
+
+  "//": "JSON User Database",
+  "usersFile": "./data/users.json"
+}

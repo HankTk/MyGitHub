@@ -1,0 +1,32 @@
+<div class="card">
+
+  <h3 class="card-header">Cases List</h3>
+
+  <div class="card-block">
+
+    <div style="padding: 20px;">
+
+    <div class="input-group" style="margin: 0px 0px 0px 0px;">
+      <input type="text" class="form-control" placeholder="Enter cases item" #title>
+      <span class="input-group-btn">
+        <button class="btn btn-primary pull-right" type="button" (click)="addCase(title)">Add</button>
+      </span>
+    </div>
+
+    <ul class="list-group" style="margin:  20px 0px 0px 0px;">
+      <li class="list-group-item" *ngFor="let item of cases | async">
+        <div class="pull-left" [class.completed]="item.isCompleted">
+          {{ item.title }}
+        </div>
+        <div class="pull-right">
+          <button class="btn btn-warning" (click)="updateCase(item)">Update</button>
+          <button class="btn btn-danger" (click)="removeCase(item)">Remove</button>
+        </div>
+      </li>
+    </ul>
+
+    </div>
+
+  </div>
+
+</div>

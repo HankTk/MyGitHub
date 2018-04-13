@@ -1,0 +1,29 @@
+{
+	"cases": [
+		{
+			"title": "TestCase #1",
+			"isCompleted": false,
+			"id": "b79bc7f8-9bfb-403a-9698-185b5a8f50e2"
+		},
+		{
+			"title": "TestCase #3",
+			"isCompleted": false,
+			"id": "ff77a78c-0570-4cf6-b454-f90d670a1d2a"
+		},
+		{
+			"title": "TestCase #5",
+			"isCompleted": false,
+			"id": "6ac18a5f-ebdf-4fb8-8b70-d9fd8e07d53f"
+		}
+	],
+	"casedetails": [
+		{
+			"description": "Test1 - description",
+			"description2todo": "814e55e8-bb11-48f7-82a2-a19494c8655b"
+		},
+		{
+			"description": "Test1 - description",
+			"description2todo": "814e55e8-bb11-48f7-82a2-a19494c8655b"
+		}
+	]
+}

@@ -1,0 +1,15 @@
+<div class="messages">
+
+  <div style="display: inline-block; height: 40px; font-size: 28px;">
+    Cases Management
+  </div>
+
+  <div class="pull-right" style="display: inline-block;">
+    <div style="display: inline-block; height: 40px; margin-right: 20px;">
+      Message Count: {{ newMessages | async }}
+    </div>
+    <button class="btn btn-info" style="margin-right: 20px;" (click)="increment()">Increment</button>
+    <button class="btn btn-info" style="margin-right: 20px;" (click)="decrement()">Decrement</button>
+  </div>
+
+</div>
