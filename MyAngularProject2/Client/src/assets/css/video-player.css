@@ -1,0 +1,61 @@
+/* custom variables */
+/* 007ab9*/
+/* #7a9441*/
+/* #4573a7*/
+.video-container {
+  position: absolute;
+  top: 50px;
+  bottom: 70px;
+  right: 30px;
+  left: 30px;
+  text-align: center; }
+  .video-container .video-wrapper {
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .video-container .video-wrapper .video-control-wrapper {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      height: 38px; }
+      .video-container .video-wrapper .video-control-wrapper .video-control {
+        width: 14px;
+        height: 14px;
+        background: url(../images/play-control-small.png) no-repeat;
+        display: inline-block;
+        float: left;
+        margin-top: 12px;
+        cursor: pointer; }
+      .video-container .video-wrapper .video-control-wrapper.bottom {
+        bottom: 0;
+        left: 0;
+        right: 0; }
+      .video-container .video-wrapper .video-control-wrapper.top-left {
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 45px;
+        padding-left: 3px; }
+        .video-container .video-wrapper .video-control-wrapper.top-left .minimise-icon {
+          font-size: 20px;
+          padding-right: 3px;
+          padding-top: 7px;
+          cursor: pointer; }
+    .video-container .video-wrapper .circle-red {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #aa4744; }
+    .video-container .video-wrapper .video-close {
+      background: #4573a7;
+      padding: 3px;
+      top: 5px;
+      right: 5px;
+      position: absolute;
+      font-size: 26px;
+      line-height: 16px;
+      cursor: pointer; }
+  .video-container img {
+    height: 100%; }
+
+/*# sourceMappingURL=video-player.css.map */

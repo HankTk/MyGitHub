@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Add Alert Conditions</title>
+<link rel="StyleSheet" href="SmartShip_StyleSheet.css" type="text/css" />
+ <script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "9.1.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Settings > Alert Management" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+ <p>&#160;</p>
+<h1>Add Alert Conditions</h1>
+<p class="SmartPara">An alert is generated when a condition set by you 
+ is met by the sensor or an asset. &#160;</p>
+<p class="SmartPara"><span style="font-weight: bold;">Example</span>: You 
+ may want to generate an alert when the value from the sensor '<span style="font-style: italic;">BOOSTER_PUMP_DISCHARGE_PRESSURE_HIGH</span>' 
+ is greater than 100.</p>
+<p class="SmartPara">You can also combine multiple conditions and values 
+ using various operators and numerical values.</p>
+<p class="SmartPara">To set the conditions:</p>
+<ol>
+	<li class="SmartNumbered"><p class="SmartPara">Once the alert details 
+	 are completed from the left pane, hover over to the right pane of 
+	 the alert create window. </p></li>
+</ol>
+<p class="SmartPara"><img src="sensor_select_correct.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<ol start="2" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">Build your own custom 
+	 conditions using the following:</p></li>
+</ol>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Search</span> 
+	 - Allows you to search and select the various sensors to add to the 
+	 alert condition. Once a sensor is selected, it appears in the grid 
+	 below the operators. See the following image for reference.</p></li>
+</ul>
+<p class="SmartPara"><img src="sensors_correct.png" alt="" style=" border:none; width:100%; max-width:587px;" border="0" /></p>
+<p class="SmartPara" style="margin-left: 40px;">To add this to the condition, 
+ click or drag-drop the sensor to add to the conditions grid below.</p>
+<p class="SmartPara" style="margin-left: 0px;"><img src="drag_drop_sensor.png" alt="" style=" border:none; width:100%; max-width:502px;" border="0" /></p>
+<p class="SmartPara" style="margin-left: 40px;">Similar to above, you can 
+ add multiple sensors to the conditions grid as shown in the image below:</p>
+<p class="SmartPara" style="margin-left: 0px;"><img src="multiple_sensors.png" alt="" style=" border:none; width:100%; max-width:673px;" border="0" /></p>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Arithmetic and conditional operators grid</span> 
+	 - This grid allows you to add various arithmetic operators and conditional 
+	 operators to the condition. Click or drag-drop to add them to the 
+	 conditions grid.</p></li>
+</ul>
+<p class="SmartPara" style="margin-left: 0px;"><img src="operator_drag_drop.png" alt="" style=" border:none; width:100%; max-width:434px;" border="0" /></p>
+<p class="SmartPara" style="margin-left: 0px;">For detailed information 
+ on how to build a condition using these operators, refer to </p>
+<table style=" left:0px; top:2656px; border-collapse:separate; width:100%; max-width:726px;" cellspacing="0" border="1">
+	<col style="width: 11.842%;" />
+	<col style="width: 27.059%;" />
+	<col style="width: 49.064%;" />
+	<tr style="height: 22px;">
+		<td bgcolor="#A0A0A0"><span class="SmartChar" style="font-weight: bold;">Operator</span></td>
+		<td bgcolor="#A0A0A0"><span class="SmartChar" style="font-weight: bold;">Description</span></td>
+		<td bgcolor="#A0A0A0"><span class="SmartChar" style="font-weight: bold;">Examples</span></td>
+	</tr>
+	<tr style="height: 22px;">
+		<td><p class="SmartPara">+</p></td>
+		<td><p class="SmartPara">Addition operator</p></td>
+		<td><p class="SmartPara">(ST_LO_TANK_LEVEL_HIGH + ST_FWD_SEAL_TANK_LEVEL_LOW)</p></td>
+	</tr>
+	<tr style="height: 22px;">
+		<td><p class="SmartPara">-</p></td>
+		<td><p class="SmartPara">Subtraction operator</p></td>
+		<td><p class="SmartPara"><span style="font-size: 14.6667px; font-variant-ligatures: normal; 
+										 font-variant-caps: normal; orphans: 2; 
+										 widows: 2; -webkit-text-stroke-width: 0px; 
+										 text-decoration-style: initial; 
+										 text-decoration-color: initial; 
+										 display: inline	 ! important ; 
+										 float: none;">(ST_LO_TANK_LEVEL_HIGH 
+		 + ST_FWD_SEAL_TANK_LEVEL_LOW) -</span>&#160;<span style="font-variant-ligatures: normal; 
+															 font-variant-caps: normal; 
+															 orphans: 2; 
+															 widows: 2; 
+															 -webkit-text-stroke-width: 0px; 
+															 text-decoration-style: initial; 
+															 text-decoration-color: initial; 
+															 font-size: 10pt; 
+															 font-family: Arial, sans-serif;">46</span> 
+		 </p></td>
+	</tr>
+	<tr style="height: 22px;">
+		<td><p class="SmartPara">*</p></td>
+		<td><p class="SmartPara">Multiplication operator</p></td>
+		<td><p class="SmartPara">(ST_LO_TANK_LEVEL_HIGH *ST_FWD_SEAL_TANK_LEVEL_LOW)</p></td>
+	</tr>
+	<tr style="height: 22px;">
+		<td><p class="SmartPara">/</p></td>
+		<td><p class="SmartPara">Division operator</p></td>
+		<td><p class="SmartPara">(ST_LO_TANK_LEVEL_HIGH + ST_FWD_SEAL_TANK_LEVEL_LOW)/2</p></td>
+	</tr>
+	<tr style="height: 58px;">
+		<td><p class="SmartPara">%</p></td>
+		<td><p class="SmartPara">Percentage operator gives the reminder 
+		 in the calculation</p></td>
+		<td><p class="SmartPara" style="font-weight: normal;">(ST_LO_TANK_LEVEL_HIGH 
+		 %10) + 45</p></td>
+	</tr>
+	<tr style="height: 22px;">
+		<td><p class="SmartPara">&gt;</p></td>
+		<td><p class="SmartPara">Greater-than operator</p></td>
+		<td><p class="SmartPara" style="font-style: normal;">(ALARM_ACK 
+		 &gt;LCARM_ALARM_FOR_TM)</p></td>
+	</tr>
+	<tr style="height: 22px;">
+		<td><p class="SmartPara">&lt;</p></td>
+		<td><p class="SmartPara">Less-than operator</p></td>
+		<td><p class="SmartPara" style="font-style: normal;">(ALARM_ACK 
+		 &lt;LCARM_ALARM_FOR_TM)</p></td>
+	</tr>
+	<tr style="height: 40px;">
+		<td><p class="SmartPara">(</p></td>
+		<td><p class="SmartPara">Open parentheses for sub condition</p></td>
+		<td><p class="SmartPara">&#160;</p></td>
+	</tr>
+	<tr style="height: 40px;">
+		<td><p class="SmartPara">)</p></td>
+		<td><p class="SmartPara">Closed parentheses for sub condition</p></td>
+		<td><p class="SmartPara">&#160;</p></td>
+	</tr>
+	<tr style="height: 58px;">
+		<td><p class="SmartPara">=</p></td>
+		<td><p class="SmartPara">Equal to operator to check if two tags 
+		 are equal. Use == in the syntax to compare</p></td>
+		<td><p class="SmartPara" style="font-style: normal;">(ST_LO_TANK_LEVEL_HIGH 
+		 *ST_FWD_SEAL_TANK_LEVEL_LOW)==110</p></td>
+	</tr>
+	<tr style="height: 58px;">
+		<td><p class="SmartPara">!=</p></td>
+		<td><p class="SmartPara">Not equal to operator to check if two 
+		 tags are not equal</p></td>
+		<td><p class="SmartPara" style="font-style: normal;">(ST_LO_TANK_LEVEL_HIGH 
+		 *ST_FWD_SEAL_TANK_LEVEL_LOW)!=110</p></td>
+	</tr>
+	<tr style="height: 40px;">
+		<td><p class="SmartPara">,</p></td>
+		<td><p class="SmartPara">Comma separator for multiple tags</p></td>
+		<td><p class="SmartPara" style="font-style: normal;">(ALARM_ACK 
+		 ,LCARM_ALARM_FOR_TM),SECA_SYSTEM_ALARM_RESET ..)</p></td>
+	</tr>
+	<tr style="height: 40px;">
+		<td><p class="SmartPara"><span style="font-weight: bold; color: #ff0000;">*</span>|</p></td>
+		<td><p class="SmartPara">OR condition for tags</p></td>
+		<td><p class="SmartPara">((ST_LO_TANK_LEVEL_HIGH *2) | (ST_FWD_SEAL_TANK_LEVEL_LOW*4) 
+		 ==220</p></td>
+	</tr>
+	<tr style="height: 40px;">
+		<td><p class="SmartPara"><span style="font-weight: bold; color: #ff0000;">*</span>&amp;</p></td>
+		<td><p class="SmartPara">AND condition for tags</p></td>
+		<td><p class="SmartPara"><span style="font-size: 14.6667px; font-variant-ligatures: normal; 
+										 font-variant-caps: normal; orphans: 2; 
+										 widows: 2; -webkit-text-stroke-width: 0px; 
+										 text-decoration-style: initial; 
+										 text-decoration-color: initial; 
+										 display: inline	 ! important ; 
+										 float: none;">(ST_LO_TANK_LEVEL_HIGH 
+		 *2) &amp; (ST_FWD_SEAL_TANK_LEVEL_LOW*4) ==220</span> </p></td>
+	</tr>
+	<tr style="height: 115px;">
+		<td><p class="SmartPara">average</p></td>
+		<td><p class="SmartPara">average of tags</p></td>
+		<td><ul>
+			<li class="SmartBullet"><p class="SmartPara">average(T_LO_TANK_LEVEL_HIGH,ST_FWD_SEAL_TANK_LEVEL_LOW)</p></li>
+			<li class="SmartBullet"><p class="SmartPara">average( T_LO_TANK_LEVEL_HIGH,245)</p></li>
+		</ul></td>
+	</tr>
+	<tr style="height: 116px;">
+		<td><p class="SmartPara">sum</p></td>
+		<td><p class="SmartPara">Sum of tags</p></td>
+		<td><ul>
+			<li class="SmartBullet"><p class="SmartPara">sum(T_LO_TANK_LEVEL_HIGH,ST_FWD_SEAL_TANK_LEVEL_LOW)</p></li>
+			<li class="SmartBullet"><p class="SmartPara">sum(T_LO_TANK_LEVEL_HIGH, 
+			 245)</p></li>
+		</ul></td>
+	</tr>
+	<tr style="height: 40px;">
+		<td><p class="SmartPara">previous</p></td>
+		<td><p class="SmartPara">Previous value of the selected tag</p></td>
+		<td><p class="SmartPara">previous(T_LO_TANK_LEVEL_HIGH) +245. Here, 
+		 the previous value to the current value of the sensor is added 
+		 with 245.</p></td>
+	</tr>
+</table>
+<p class="SmartPara" style="margin-left: 0px; font-weight: bold; color: #ff0000;">* 
+ <span style="color: #000000; font-weight: normal;">| and &amp; operators 
+ should be performed between two Boolean conditions like (a&gt;0 | b &gt;10)</span></p>
+<p class="SmartPara" style="margin-left: 0px; font-weight: bold; color: #ff0000;">*<span 
+	 style="color: #000000;"> </span><span style="color: #000000; font-weight: normal;">When 
+ performing |operation, make sure that the syntax is in (a&gt;b) | (b&gt;d) 
+ format and not in ((a&gt;b) | (b&gt;d))</span></p>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Numbers</span> - The numbers grid allows 
+	 you to add numerical values to your condition. You can click, drag-drop 
+	 or input using your keyboard to add them to the conditions grid.</p></li>
+</ul>
+<p class="SmartPara" style="margin-left: 0px;"><img src="dragdrop_numbers.png" alt="" style=" border:none; width:100%; max-width:873px;" border="0" /></p>
+<p class="Note" style="font-weight: bold;"><span style="font-weight: normal;"><img src="note.png" alt="" style=" border:none; width:100%; max-width:30px;" border="0" />Click </span>Clear All<span style="font-weight: normal;">, 
+ if you want to clear the elements from the conditions grid</span></p>
+<p class="SmartPara">A condition built using the above method is given 
+ below:</p>
+<p class="SmartPara" style="font-style: italic;">Average (ST_AFT _BEARING_TEMP, 
+ ST_FWD_BEARING_TEMP) &gt; 0.1905*ME RPM+ 46.045</p>
+<p class="SmartPara">Here the system calculates the average of both ST_AFT 
+ _BEARING_TEMP and ST_FWD_BEARING_TEMP sensor tags and checks if it is 
+ greater than the value of the remaining expression, that is 0.1905*ME 
+ RPM+ 46.045. If yes, an alert is generated. Else, no alert is generated.</p>
+<p class="Note"><img src="note.png" alt="" style=" border:none; width:100%; max-width:30px;" border="0" /> If you wish to add an additional 
+ condition (sensor, operator or number) before any element in the condition 
+ expression, drag-drop the condition from the corresponding area on top 
+ of the expression element in the conditions grid. The condition gets added 
+ to the left of the expression element as shown in the images below:</p>
+<p class="SmartPara"><img src="add_element_before.png" alt="" style=" border:none; width:100%; max-width:725px;" border="0" /></p>
+<p class="SmartPara"><img src="add_element_before2.png" alt="" style=" border:none; width:100%; max-width:756px;" border="0" /></p>
+<ol start="3" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">Once the condition is 
+	 built, click <span style="font-weight: bold;">Save</span>. The alert 
+	 is created.</p></li>
+</ol>
+<h3 class="SmartPara"><span>C</span>reate a Vessel Alert</h3>
+<ol>
+	<li class="SmartNumbered">Select <span style="font-weight: bold;">Vessel 
+	 Alert</span><span>. </span></li>
+	<li class="SmartNumbered"><span>From the </span><span style="font-weight: bold;">Vessel</span><span> 
+	 drop-down, select the required vessel.</span></li>
+</ol>
+<p><img src="vessel_alert_create.png" alt="" style=" border:none; width:100%; max-width:454px;" border="0" /></p>
+<ol start="3" style="list-style: decimal;">
+	<li class="SmartNumbered"><span>Complete by following the same steps 
+	 on creating a management alert and add the conditions. </span></li>
+</ol>
+<p class="SmartPara"><a href="Create_an_Alert.htm"><img src="previous.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" /></a> 
+ &#160;&#160;<a href="Edit_an_Alert.htm"><img src="next.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" /></a></p>
+ <p>&#160;</p>
+</body>
+</html>

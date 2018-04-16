@@ -1,4 +1,5 @@
 import AuthService from "../services/authService";
+import CommonService from "../services/commonService";
 import {Router} from "express";
 
 /**
@@ -15,6 +16,7 @@ export default class AuthRouter {
      */
     constructor() {
         this.router = Router();
+        this.routes();
     }
 
     /**
@@ -25,6 +27,12 @@ export default class AuthRouter {
 
         // Services
         const authServiceObj = new AuthService();
+        const commomServiceObj = new CommonService();
+
+        // Env
+        this.router.get('/simulate/env', function (req, res) {
+            commomServiceObj.getEnv(req, res);
+        });
 
         // Login
         this.router.post('/simulate/login', function (req, res) {

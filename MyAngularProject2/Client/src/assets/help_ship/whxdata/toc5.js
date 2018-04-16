@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc.js\"  name=\"Ship Assets View\"><item name=\"Ship Assets View\" url=\"Ship_Assets_View.htm\" /><item name=\"Various Tabs of Asset View\" url=\"Various_Tabs_of_Asset_View.htm\" /><book name=\"Various Tabs of System\" src=\"toc6.js\" /></data>";

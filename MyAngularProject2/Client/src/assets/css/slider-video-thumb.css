@@ -1,0 +1,54 @@
+/* custom variables */
+.transition-timing, .carousel-video-thumb .video-thumb-wrapper .video-thumb .video-thumb-control, .carousel-video-thumb .video-thumb-wrapper .video-thumb .full-screen-icon {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+.carousel-video-thumb .video-thumb-wrapper {
+  background: #171e28;
+  border: 1px solid #334258; }
+  .carousel-video-thumb .video-thumb-wrapper .video-thumb {
+    position: relative;
+    height: 115px;
+    overflow: hidden; }
+    .carousel-video-thumb .video-thumb-wrapper .video-thumb > img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto; }
+    .carousel-video-thumb .video-thumb-wrapper .video-thumb .video-thumb-control {
+      width: 60px;
+      height: 60px;
+      background-position: top left;
+      background: url(/assets/images/owl.video.play.png) no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      cursor: pointer; }
+    .carousel-video-thumb .video-thumb-wrapper .video-thumb.active .video-thumb-control {
+      background-position: bottom left;
+      opacity: 0; }
+    .carousel-video-thumb .video-thumb-wrapper .video-thumb.active:hover .video-thumb-control, .carousel-video-thumb .video-thumb-wrapper .video-thumb.active:hover .full-screen-icon {
+      opacity: 1; }
+    .carousel-video-thumb .video-thumb-wrapper .video-thumb .full-screen-icon {
+      margin-left: 0;
+      background: rgba(0, 0, 0, 0.5) center center;
+      padding: 5px;
+      background-image: url(/assets/images/full-screen-icon.png);
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      opacity: 0; }
+  .carousel-video-thumb .video-thumb-wrapper h4 {
+    text-align: center;
+    color: #e0ca7a;
+    margin-bottom: 5px; }
+
+/*# sourceMappingURL=slider-video-thumb.css.map */

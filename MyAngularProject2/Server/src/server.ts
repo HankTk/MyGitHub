@@ -10,6 +10,7 @@ import jsonServer from 'json-server';
 // Routers
 import AuthRouter from './routers/authRouter';
 import CasesRouter from './routers/casesRouter';
+import CommonRouter from './routers/commonRouter';
 
 // Socket
 const socketio = require('./socket');
@@ -35,6 +36,9 @@ class Server {
     // Auth Router
     public authRouters: AuthRouter;
 
+    // Common Router
+    public commonRouters: CommonRouter;
+
     /**
      * constructor
      *
@@ -45,11 +49,12 @@ class Server {
 
         // Cases Router
         this.casesRouters = new CasesRouter(socketio);
-        this.casesRouters.routes();
 
         // Auth Router
         this.authRouters = new AuthRouter();
-        this.authRouters.routes();
+
+        // Common Router
+        this.commonRouters = new CommonRouter();
 
         // Config
         this.config();
@@ -94,6 +99,7 @@ class Server {
     public routes(): void {
         // Rewrite Resource
         this.server.use(jsonServer.rewriter({
+            '/api/env':       '/simulate/env',
             '/api/login':     '/simulate/login',
             '/api/cases':     '/simulate/cases',
             '/api/cases/:id': '/simulate/cases/:id'

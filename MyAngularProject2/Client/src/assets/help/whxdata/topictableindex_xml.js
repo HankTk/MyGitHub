@@ -1,0 +1,1 @@
+gXMLBuffer="<?xml version=\"1.0\" encoding=\"UTF-8\"?><cki><ck fm=\"Accessing Live Stream Videos of Assets\" to=\"RMD Overview\" num=\"53\"/><ck fm=\"Role Management\" to=\"View Assets from Vessel View\" num=\"17\"/></cki>";

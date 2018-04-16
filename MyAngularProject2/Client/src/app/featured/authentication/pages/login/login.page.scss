@@ -1,3 +1,218 @@
-.help-block {
-  color: red;
+.ss-LoginWrap * {
+  -webkit-appearance: none;
+}
+
+.ss-MapWrap {
+  background: url(../../../../../assets/images/smartship-map.png) center center
+    no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ss-MapWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ss-LoginWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -90px 0 0 -330px;
+  width: 660px;
+  height: 120px;
+  a {
+    color: #92a4ba;
+  }
+}
+
+.ss-LoginWrap-version {
+  color: #92a4ba !important;
+  float: left !important;
+  margin-right: 15px !important;
+  cursor: auto !important;
+}
+
+.ss-LoginLogo {
+  background: url(../../../../../assets/images/smartship-logo.png) top left
+    no-repeat;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.ss-LoginFormWrap {
+  border: none;
+  border-bottom: solid 1px #425368;
+  padding: 0 0px 5px 0px;
+  margin: 0 0 10px 0;
+}
+
+.ss-LoginFormWrap input[type='text'],
+.ss-LoginFormWrap input[type='password'] {
+  background: rgba(115, 130, 150, 0.99) !important;
+  border: none;
+  font-size: 14px !important;
+  width: 280px;
+  height: 30px;
+  margin: 0 1px 15px 0;
+  padding: 5px 10px;
+  color: #000 !important;
+  transition: all 0.3s ease;
+  float: left;
+}
+
+.ss-LoginFormWrap input[type='text'] {
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+}
+
+.ss-LoginFormWrap input[type='text']:focus,
+.ss-LoginFormWrap input[type='password']:focus {
+  color: #fff;
+  border-bottom: solid 1px #007ab9 !important;
+  height: 30px;
+  background: #8190a4 !important;
+}
+
+.ss-LoginFormWrap input[type='submit'] {
+  background: #007ab9;
+  border: none;
+  margin: 0 auto;
+  padding: 6px 30px;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+  text-transform: uppercase;
+  display: inherit;
+  transition: all 0.3s ease;
+  float: left;
+  font-size: 14px !important;
+  width: 95px;
+  box-sizing: border-box;
+}
+
+.ss-LoginFormWrap input[type='submit']:hover,
+.ss-LoginFormWrap input[type='submit']:focus {
+  background: #29a1da;
+}
+
+.ss-LoginWrap a {
+  display: inherit;
+  text-align: center;
+  color: #92a4ba;
+  text-transform: uppercase;
+  float: right;
+  font-size: 10px;
+}
+
+.ss-LoginWrap a:focus {
+  color: #fff;
+}
+
+.ss-LoginFormWrap .submit-btn {
+  background: #007ab9;
+  border: none;
+  margin: 0 auto;
+  padding: 6px 30px;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+  text-transform: uppercase;
+  display: inherit;
+  transition: all 0.3s ease;
+  float: left;
+  /*
+  font-size: 13px !important;
+  */
+  font-size: 11px !important;
+  width: 98px;
+  box-sizing: border-box;
+}
+
+.ss-LegalNote {
+  padding: 10px 50px;
+  font-size: 9px;
+  text-align: left;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  line-height: 14px;
+  color: #92a3b6;
+  width: 65%;
+  z-index: 99999 !important;
+}
+
+.ss-AlphaORI {
+  background: url(../../../../../assets/images/alpha-ori.png) no-repeat 0 0;
+  width: 120px;
+  height: 22px;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.ss-Footer {
+  font-size: 8px;
+  position: absolute;
+  z-index: 100;
+  color: #92a3b6;
+
+  text-align: right;
+  right: 49px;
+  bottom: 10px;
+}
+
+.ss-LegalNote span.ss-TextLogo {
+  color: #0094ca;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #444;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #444;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #444;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #444;
+}
+
+.ss-LoginForm {
+  width: 100%;
+  height: 100%;
+
+  .submit-btn-img {
+    margin-left: 10px;
+  }
+
+  .message-style {
+    color: #c55a5a;
+    font-size: 13px !important;
+    max-width: 450px;
+    display: inline-block;
+  }
+}
+
+.ssLoginFormTemplatePassword {
+  padding: 0px 0px 0px 11px;
+}
+
+.ssLoginFormTemplatePolicy {
+  float: right;
+  font-size: 14px;
 }

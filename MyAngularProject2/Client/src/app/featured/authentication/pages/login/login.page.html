@@ -1,55 +1,323 @@
 <!--
   Application Login Form
 -->
-  <div class="py-5 my-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <div class="card text-white p-5 bg-dark">
-            <div class="card-body">
+<div class="ss-MapWrap">
 
-              <h1 class="mb-4">Login</h1>
+  <!-- Login Form -->
+  <form #loginForm="ngForm" class="ss-LoginForm">
+    <div class="ss-AlphaORI"></div>
+    <span class="ss-LegalNote">
+      <span class="ss-TextLogo">SMARTShip
+      </span>
+      <span class="text-uppercase"> is a Decision Support System intended to aid troubleshooting & diagnostics.Please rely on your individual judgement
+        based on independent verification of data to determine the best course of action.</span>
+    </span>
+    <div class="ss-Footer">
+      &copy; 2018 ALPHA ORI TECHNOLOGY HOLDINGS PTE. LTD.
+      <a (click)="open(policyContent)">Privacy Policy</a>
+    </div>
+    <div class="ss-LoginWrap" id="divLoginWrap">
+      <div class="ss-LoginFormWrap clearfix">
+        <div class="ss-LoginLogo"></div>
+        <div class="ss-mandatory">
+          <input type="text" name="username" placeholder="User Id" #username="ngModel" required minlength="1" maxlength="100" [(ngModel)]="loginDetails.username"
+            autofocus #user (keypress)="hideDiv();" (keydown)="hideDiv();">
+          <input type="password" name="password" placeholder="Password" #password="ngModel" required minlength="1" maxlength="100"
+            [(ngModel)]="loginDetails.password" (keypress)="hideDiv();" (keydown)="hideDiv();">
+          <button #loginButton type="submit" (click)="login(loginForm.value, loginForm.valid)" class="submit-btn" id="btnLogin">
+            <span *ngIf="!loading"> Login</span>
+            <img src="../../../../../assets/images/ajax-loader.gif" class="submit-btn-img" *ngIf="loading">
+          </button>
+        </div>
+      </div>
+      <small *ngIf="show" class="message-style">
+        {{loginMsg}}
+      </small>
+      <small [hidden]="username.valid || (username.pristine && !loginForm.submitted)" class="message-style">
+        User name cannot be empty.
+      </small>
+      <small [hidden]="password.valid || (password.pristine && !loginForm.submitted)" class="message-style">
+        Password cannot be empty.
+      </small>
+      <a class="ss-LoginWrap-version">Version: 1.2 </a>
 
-              <form #form="ngForm">
+      <a *ngIf="appEnvironment == 'shore'" href="#" tabindex="0" (click)="open(forgotpassword)">Forgot Password?</a>
+    </div>
+  </form>
 
-                <div class="form-group"><label>Username</label>
-                  <input
-                    name="username"
-                    type="text" class="form-control" placeholder="Enter username"
-                    required
-                    [(ngModel)]="form_username"
-                    #username="ngModel">
-                  <span class="help-block"
-                    *ngIf="(username.invalid && username.touched)">Enter username
-                  </span>
-                </div>
-
-                <div class="form-group"><label>Password</label>
-                  <input
-                    name="password"
-                    type="password" class="form-control" placeholder="Enter password"
-                    required
-                    [(ngModel)]="form_password"
-                    #password="ngModel">
-                  <span class="help-block"
-                        *ngIf="(password.invalid && password.touched)">Enter password
-                  </span>
-                </div>
-
-                <button
-                  name="btnLogin" type="submit"
-                  class="btn btn-primary"
-                  (click)="onClickLogin(form)">Login</button>
-
-                <span class="help-block" style="margin-left: 20px;">{{message}}</span>
-
-              </form>
-
-            </div>
-          </div>
+  <!-- Forgotpassword -->
+  <ng-template #forgotpassword let-c="close" let-d="dismiss" class="modal-main ssLoginFormTemplatePassword">
+    <div class=" ss-EleBlock ss-FormElements modal-main">
+      <div class="modal-header ">
+        <h4 class="modal-title">Forgot Password</h4>
+        <button type="button" class="close modal-close-main" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="push-bottom5">Email address</label>
+          <input type="email" (keyup.enter)="c('Close click');passwordReset(userEmailId)" class="form-control" name="email" #userEmailId
+            maxlength="100" required>
+        </div>
+        <div class="text-right">
+          <button type="button" class="ss-themeBtn-Blue btn btn-primary  btn-sm" (click)="c('Close click');passwordReset(userEmailId) ">
+            Send my password
+          </button>
         </div>
       </div>
     </div>
-  </div>
+  </ng-template>
 
+  <!-- policyContent -->
+  <ng-template #policyContent let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h3 class="modal-title xtraheader">SMARTShip Privacy Policy</h3>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <h3 class="xtraheader">Introduction
+        <span class="ssLoginFormTemplatePolicy">As of March 28, 2018</span>
+      </h3>
+      <p>Alpha Ori Technologies Pte. Ltd., its affiliates and subsidiaries and each of their directors, officers, employees,
+        and authorized representatives (collectively, “Alpha Ori”, “we”, “us” or “our”) respect your privacy and are committed
+        to protecting it through compliance with this Privacy Policy (this “Policy”). This Policy describes our policies
+        and practices for collecting, using, maintaining, protecting, and disclosing information that we collect from you
+        or that you provide to us when you visit our website, alphaori.sg (our “Website”) or use any of our products, software,
+        applications or services made available by us (collectively with the Website, the “Services”). Alpha Ori is a global
+        organization sharing the data we manage across business entities, processes and information systems around the world.
+        This Policy is global in nature and our privacy practices may vary among the countries in which we operate to reflect
+        local practices and legal requirements.</p>
+
+      <h3 class="xtraheader">Your Consent</h3>
+
+      <p>Please read this Policy carefully to understand our policies and practices regarding your information and how we will
+        treat it. By accessing or using the Services, you agree that this Policy governs our collection, use, maintenance,
+        protection and disclosure of any information submitted to us on or through the Services. If you are using the Services
+        on behalf of an entity, you are agreeing to this Policy for that entity and are representing to us that you have
+        the authority to do so (in which case “you” will refer to that entity). If you do not agree to be bound by this Policy,
+        you may not access or use our Services.</p>
+
+      <h3 class="xtraheader">Scope</h3>
+
+      <p>This Policy covers only information collected through the Services and not through any other information collection
+        or processing, including services offered by other companies or individuals that have separate privacy policies that
+        do not incorporate this Policy.</p>
+
+      <h3 class="xtraheader">Types of Information</h3>
+
+      <p>We collect both personal and non-personal information. When we refer to “personal information” in this Policy, we mean
+        information that can be used to identify you as an individual, such as your name, birth date, e-mail address, mailing
+        address, or telephone number. Personal information does not include “anonymous” or “aggregate” information. Anonymous
+        information is information that is not associated with or linked to your personal information and that does not enable
+        identification of you as an individual. Aggregate information is anonymous information that we collect about a group
+        or category of products, services or users.</p>
+
+      <h3 class="xtraheader">Collection Methods</h3>
+
+      <p>Alpha Ori collect information about you from various sources.</p>
+
+      <p>
+        <strong>Information you provide :</strong> You may choose to voluntarily provide information to us, for example in connection
+        with your use of any of our Services or in relation to an actual or potential business or employment relationship
+        with us. We collect your name, e-mail address(es), mailing address(es), telephone number(s), and information related
+        to the business you represent when you request information from us, register, order a Service, or otherwise voluntarily
+        send us such information. We will also collect payment information, phone number, billing and shipping addresses
+        when you use a chargeable Service.
+      </p>
+      <p>
+        <strong>Information collected automatically :</strong> We may also collect information by automated means. When you visit
+        our Website or use our software applications, we may collect information that is sent to us automatically from your
+        computer, mobile device or web browser. This information typically includes your IP address, the identity of your
+        Internet service provider, the name and version of your operating system, the name and version of your browser, the
+        date and time of your visit, the pages you visit, your location and your mobile device unique identifier.
+      </p>
+
+      <p>
+        <strong>Cookies :</strong> We may also use cookies, web beacons or other similar technologies to collect information about
+        your use of our Website or web applications. We may use these technologies to collect information about the ways
+        you use the Website, which pages you view and other usage information, and when you access or download any software
+        applications made available by us on the Website. We may also allow other companies, such as third-party web analytics
+        service providers or advertisers, to collect data about traffic through our Website or web applications via cookies
+        or web beacons. You are free to decline cookies, but by doing so, your ability to use applicable Services may be
+        diminished.
+      </p>
+
+      <p>
+        <strong>Hardware sensors and software applications :</strong> In connection with providing you with the Services, Alpha Ori
+        group may install or use a variety of hardware sensors and software applications that may collect information about
+        your vessel and systems. Through these hardware sensors and software applications, we may collect location data,
+        systems technical information, operations and performance data.
+      </p>
+      <p>
+        <strong>Third Party Sources :</strong> We also may obtain information about you from publicly available information systems,
+        consumer reporting agencies, and commercial information services.
+      </p>
+
+      <h3 class="xtraheader">Use of Information</h3>
+
+      <p>We may use your information, including personal information, that we obtain to provide the Services, operate our business,
+        meet our contractual and legal obligations, protect the security of our system or fulfill other legitimate interests.
+        The purposes for which we collect and use your information include:</p>
+
+      <p>• to provide, manage, maintain and secure the Services you request;</p>
+      <p>• to provide you, if you are a customer, with effective customer service;</p>
+      <p>• to better understand the preferences of users of our Services, compile aggregated statistics about usage of our Services;</p>
+      <p>• to provide you with personalized experience when you use our Services;</p>
+      <p>• to contact you with information and notices related to your use of our Services;</p>
+      <p>• to contact you with special offers and other information we believe will be of interest to you;</p>
+      <p>• to invite you to participate in surveys and provide feedback to us;</p>
+      <p>• to develop aggregate statistic to help monitor the performance of the Services, conduct research, improve our content
+        and services;</p>
+      <p>• to operate and improve our business, including to administer, protect and improve our services, to develop new products
+        and services, and for other internal business purposes;</p>
+      <p>• to evaluate your interest in employment and contact you regarding possible employment with Alpha Ori group;
+      </p>
+      <p>• to protect the security of our Services; to protect against and prevent fraud or identity theft, claims and other
+        liabilities; and to manage corporate risk exposure; </p>
+      <p>• to enforce our terms of use or other agreements; and</p>
+      <p>• to use for any other purpose we describe at the point where we collect your information.</p>
+
+
+      <h3 class="xtraheader">Disclosure of Information</h3>
+
+      <p>We do not sell or otherwise disclose personal information we collect about you, except as described in this Policy
+        or otherwise disclosed to you at the time the information is collected.</p>
+
+      <p>We may disclose your information, including personal information, to third-party service providers, such as vendors,
+        technical agents, subcontractors and consultants, to perform certain business-related functions that help make the
+        Services and our offerings available and functional, including, but not limited to, design services, web site hosting,
+        data analysis services, maintenance and technical services, customer support and e-mail delivery services. We require
+        these third-party service providers to maintain the confidentiality of the information we share with them, and we
+        require them not use your information for anything other than to provide services on our behalf. </p>
+
+      <p>We may also disclose your information, including personal information, when we, in good faith, believe disclosure is
+        appropriate to comply with the law, a court order, or a subpoena. We may also disclose such information to prevent
+        or investigate a possible crime, such as fraud or identity theft; to protect the security of our Services; to enforce
+        or apply our terms of use or other agreements; or to protect our own rights or property or the rights, property or
+        safety of our users or others.</p>
+
+      <p>We reserve the right to transfer your information, including personal information, in connection with a prospective
+        or actual sale, merger, transfer or other reorganization of all or parts of our business. If such transfer occurs,
+        we will use reasonable efforts to direct the transferee to use personal information you have provided to us in a
+        manner consistent with this policy. Following such a sale or transfer, you may contact the person or entity to which
+        we transferred your personal information with any inquiries concerning the processing of that information.
+      </p>
+
+      <p>We may disclose aggregated user statistics and other information with our affiliates, agents and current or prospective
+        business partners.
+      </p>
+
+      <p>Finally, we may disclose your information, including personal information, where you have granted us permission.
+      </p>
+
+      <p>On our Website you may have an opportunity to post your information on public areas of the Website (i.e. comments or
+        blog). Note that information is visible to and may be collected, stored and used by anyone and therefore you should
+        have no expectation of privacy with respect to such posted content. We strongly suggest you be cautious about posting
+        your personal information.</p>
+
+      <p>In addition, you may choose to use certain features of the Services for which we partner with other entities. These
+        features are operated by third parties that are not affiliated with Alpha Ori. These third parties may use your information,
+        including personal information, in accordance with their own privacy policies. We strongly suggest you review the
+        third parties’ privacy policies if you use the relevant features.</p>
+
+      <h3 class="xtraheader">Your Choices</h3>
+
+      <p>We offer you certain choices about what information we collect from you, how we use that information, and how we communicate
+        with you. </p>
+
+      <p>
+        <strong>Decline :</strong> When you are asked to provide information to us, you may choose to decline to provide such information.
+        If you decline to provide such information, your ability to use applicable Services may be diminished or restricted.
+      </p>
+
+      <p>
+        <strong>Opt-in/out :</strong> In some circumstances, such as e-mail marketing, we offer you the ability to opt-in or opt-out
+        of some kinds of information collection, use or communications. In such circumstances, we will respect your choice.
+        For example, you can opt-out of receiving marketing e-mails by emailing us at privacy@alphaori.sg. Please also note
+        that we may still send you important administrative messages.
+      </p>
+
+      <p>
+        <strong>Cookies :</strong> You have the option to accept or disable cookies at any time by activating the appropriate setting
+        on your browser or activating the appropriate settings in your computer or mobile device. If you chose to disable
+        your cookies, your ability to use applicable Services may be diminished.
+      </p>
+
+      <p>
+        <strong>Do Not Track :</strong> Certain web browsers enable users to activate a “Do Not Track” signal but we do not currently
+        respond to the “Do Not Track” signal or other similar mechanisms.
+      </p>
+
+      <p>
+        <strong>Access :</strong> Subject to applicable law, you may have the right to request access to and receive information
+        about the personal information we maintain about you, update and correct inaccuracies in your personal information,
+        and have the information blocked or deleted, as appropriate. Upon appropriate request, we will update and correct
+        inaccuracies in your personal information but we reserve the fight to use information obtained previously to verify
+        your identity. If we are unable to verify your identity or if the law permits or requires us to do so, we may limit
+        or deny your request.
+      </p>
+      <p>If you would like to request access to and receive information about the personal information we maintain about you,
+        update and correct inaccuracies in your personal information, and have the information blocked or deleted, please
+        email us at
+        <a href=""> privacy@alphaori.sg.</a>
+      </p>
+
+      <h3 class="xtraheader">Storage and Processing of Information</h3>
+
+      <p>We store and process data in the United States and on servers around the world, including without limitation India
+        and Singapore. Wherever we store or process personal information pursuant to this Policy, we take measures to ensure
+        that the information is processed in accordance with this Policy and in compliance with applicable law.</p>
+
+      <p>By using our Services, you agree that your personal information may be: (i) transferred from your country to the United
+        States or other countries that may not provide an equivalent level of privacy and data protection law as your country
+        and (ii) used in accordance with this Policy.</p>
+
+
+      <h3 class="xtraheader">Security</h3>
+
+      <p>We maintain reasonable administrative, physical and technological measures to protect the confidentiality and security
+        of your information. Unfortunately, no Website, server, database or e-mail transmission is completely secure or error-free.
+        We therefore cannot guarantee that your information will not be disclosed, misused or lost by accident or by the
+        unauthorized acts of others.</p>
+
+
+      <h3 class="xtraheader">Children’s Privacy</h3>
+
+      <p>Our services are intended for adults. We do not intentionally or knowingly collect personal information from children,
+        as defined by applicable law, and we request that children do not submit any information to us. If you believe we
+        might have any information from or about a child, please email us at privacy@alphaori.sg.</p>
+
+      <h3 class="xtraheader">Links to Third-Party Websites</h3>
+
+      <p>The Services may contain links to other web sites not controlled or operated by us. This Policy does not apply to third-party
+        linked web sites, which may have their own privacy policies. We strongly suggest you review the third parties’ privacy
+        policies if you access such websites. In addition, links from the Services to third-party linked web sites do not
+        imply that we endorse or have reviewed content of such web sites. </p>
+
+      <h3 class="xtraheader">Amendments</h3>
+
+      <p>We reserve the right to change, modify, add or remove portions of this Policy at any time. When we do, we will post
+        the revised version on our Website and indicate the date this policy was last revised. When you access our Website
+        or use our other Services, you are accepting the current version of this Policy. We strongly suggest you regularly
+        revisit this Policy to learn of any changes or amendments.</p>
+
+      <h3 class="xtraheader">Contact</h3>
+
+      <p>If you have any questions about this Policy, please email us at privacy@alphaori.sg or write to us at
+        <br>Alpha Ori Technologies Pte. Ltd.,
+        <br>Attention: Privacy Counsel,
+        <br>3 Fusionopolis Way,
+        <br>#13-20 Symbiosis Tower,
+        <br> Singapore 138633. </p>
+    </div>
+
+  </ng-template>
+
+  <!-- Toasty -->
+  <ng2-toasty [position]="'center-center'"></ng2-toasty>
+
+</div>

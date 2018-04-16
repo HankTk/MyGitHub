@@ -15,6 +15,7 @@ export default class CasesRouter {
      */
     constructor(private socketio: any) {
         this.router = Router();
+        this.routes();
     }
 
     /**

@@ -2,8 +2,14 @@
  * Case store
  *
  */
-import {tassign} from 'tassign';
-import {CASES_LOAD, CASES_ADD, CASES_UPDATE, CASES_REMOVE, CASES_CLEAR} from './actions';
+import { tassign } from 'tassign';
+import {
+  CASES_LOAD,
+  CASES_ADD,
+  CASES_UPDATE,
+  CASES_REMOVE,
+  CASES_CLEAR
+} from './actions';
 import _ from 'lodash';
 
 /**
@@ -22,7 +28,7 @@ export interface ICasesState {
  */
 export const CASES_INITIAL_STATE: ICasesState = {
   cases: [],
-  lastUpdate: null,
+  lastUpdate: null
 };
 
 /**
@@ -34,7 +40,7 @@ export const CASES_INITIAL_STATE: ICasesState = {
  */
 function addCase(state, action) {
   // New Case
-  const newCase = action.cases;
+  const newCase = action.data;
   return tassign(state, {
     cases: state.cases.concat(newCase),
     lastUpdate: new Date()
@@ -50,14 +56,18 @@ function addCase(state, action) {
  */
 function updateCase(state, action) {
   // Find Target Data, find the position of this item in the array.
-  const cases = state.cases.filter(function(o) {return o.id === action.cases.id; });
-  const index = state.cases.findIndex(function(o) {return o.id === action.cases.id; });
+  const cases = state.cases.filter(function(o) {
+    return o.id === action.data.id;
+  });
+  const index = state.cases.findIndex(function(o) {
+    return o.id === action.data.id;
+  });
 
   // Update Data
   return tassign(state, {
     cases: [
       ...state.cases.slice(0, index),
-      tassign(cases[0], action.cases),
+      tassign(cases[0], action.data),
       ...state.cases.slice(index + 1)
     ],
     lastUpdate: new Date()
@@ -73,11 +83,15 @@ function updateCase(state, action) {
  */
 function removeCase(state, action) {
   // Find Target Data, find the position of this item in the array.
-  const cases = state.cases.filter(function(o) {return o.id === action.cases.id; });
-  const index = state.cases.findIndex(function(o) {return o.id === action.cases.id; });
+  const cases = state.cases.filter(function(o) {
+    return o.id === action.data.id;
+  });
+  const index = state.cases.findIndex(function(o) {
+    return o.id === action.data.id;
+  });
 
   return tassign(state, {
-    cases: state.cases.filter(t => t.id !== action.cases.id),
+    cases: state.cases.filter(t => t.id !== action.data.id),
     lastUpdate: new Date()
   });
 }
@@ -117,7 +131,10 @@ function loadCases(state, action) {
  * @param action
  * @returns {ICasesState}
  */
-export function casesReducer(state: ICasesState = CASES_INITIAL_STATE, action): ICasesState {
+export function casesReducer(
+  state: ICasesState = CASES_INITIAL_STATE,
+  action
+): ICasesState {
   switch (action.type) {
     case CASES_ADD:
       return addCase(state, action);

@@ -1,0 +1,23 @@
+/* custom variables */
+/* 007ab9*/
+/* #7a9441*/
+/* #4573a7*/
+.sidebar-brand-info .progress {
+  height: 2px;
+  overflow: inherit;
+  background: #4573a7;
+  margin-bottom: 10px;
+  margin-top: 3px; }
+  .sidebar-brand-info .progress .progress-bar {
+    position: relative;
+    height: auto; }
+    .sidebar-brand-info .progress .progress-bar .arrow-end {
+      position: absolute;
+      right: -6px;
+      top: -4px; }
+.sidebar-brand-info h3 {
+  color: #e0ca7a; }
+.sidebar-brand-info h4 {
+  color: #fff; }
+
+/*# sourceMappingURL=vessal-card.css.map */

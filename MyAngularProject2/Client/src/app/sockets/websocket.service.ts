@@ -1,16 +1,20 @@
-import {Injectable} from '@angular/core';
-import {NgRedux, select} from '@angular-redux/store';
+import { Injectable } from '@angular/core';
+import { NgRedux, select } from '@angular-redux/store';
 
 import * as io from 'socket.io-client';
 
-import {Observable} from 'rxjs/Observable';
-import {CASES_ADD, CASES_UPDATE, CASES_REMOVE, CASES_CLEAR} from '../redux/cases/actions';
-import {IAppState} from '../redux/store';
-import {MODEL_TODO} from './model-name-constants';
+import { Observable } from 'rxjs/Observable';
+import {
+  CASES_ADD,
+  CASES_UPDATE,
+  CASES_REMOVE,
+  CASES_CLEAR
+} from '../redux/cases/actions';
+import { IAppState } from '../redux/store';
+import { MODEL_TODO } from './model-name-constants';
 
 @Injectable()
 export class WebSocketService {
-
   // Socket
   private socket;
 
@@ -19,10 +23,7 @@ export class WebSocketService {
    *
    * @param {NgRedux<IAppState>} ngRedux
    */
-  constructor(
-    private ngRedux: NgRedux<IAppState>
-  ) {
-  }
+  constructor(private ngRedux: NgRedux<IAppState>) {}
 
   /**
    * connect
@@ -30,7 +31,7 @@ export class WebSocketService {
    * @param {string} queryString
    */
   connect(queryString: string) {
-    this.socket = io({ 'path': '/ws' });
+    this.socket = io({ path: '/ws' });
   }
 
   /**
@@ -40,20 +41,17 @@ export class WebSocketService {
    * @returns {Observable<any>}
    */
   on(onName: string) {
-    let observable = new Observable(observer => {
-
-      this.socket.on(onName, (data) => {
+    const observable = new Observable(observer => {
+      this.socket.on(onName, data => {
         observer.next(data);
 
         // Message Broker
         this.messageBroker(data);
-
       });
 
       return () => {
         this.socket.disconnect();
       };
-
     });
     return observable;
   }
@@ -64,7 +62,6 @@ export class WebSocketService {
    * @param message
    */
   messageBroker(message) {
-
     // Received Message
     switch (message.model) {
       case MODEL_TODO: {
@@ -84,19 +81,19 @@ export class WebSocketService {
   casesProcess(message) {
     switch (message.action) {
       case 'create': {
-        this.ngRedux.dispatch({type: CASES_ADD, cases: message.item});
+        this.ngRedux.dispatch({ type: CASES_ADD, data: message.item });
         break;
       }
       case 'update': {
-        this.ngRedux.dispatch({type: CASES_UPDATE, cases: message.item});
+        this.ngRedux.dispatch({ type: CASES_UPDATE, data: message.item });
         break;
       }
       case 'delete': {
-        this.ngRedux.dispatch({type: CASES_REMOVE, cases: message.item});
+        this.ngRedux.dispatch({ type: CASES_REMOVE, data: message.item });
         break;
       }
       case 'deleteAll': {
-        this.ngRedux.dispatch({type: CASES_CLEAR});
+        this.ngRedux.dispatch({ type: CASES_CLEAR });
         break;
       }
       default: {
@@ -104,5 +101,4 @@ export class WebSocketService {
       }
     }
   }
-
 }

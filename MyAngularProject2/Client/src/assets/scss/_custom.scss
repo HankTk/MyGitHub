@@ -1,0 +1,29 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+/* custom variables */
+
+$color-main:           #fff;
+$bg-main:              rgb(33, 42, 57);
+$bg-default:           rgb(252, 171, 0); 
+$brand-primary:        rgb(0, 122, 185);
+$link-hover-color:     #e0ca7a;
+$brand-warning:        $light-blue;
+$brand-danger:         $red; 
+$brand-info:           $orange; 
+$muted:                #9eb1b9;
+$brand-success:        $green!default; 
+$bg-inverse:           #000000;
+$table-row-border:     lighten($bg-main, 15%);
+$grey:                 #898989;
+$pagination-link:      #455263;
+$dark-green:           #598256;
+$ash:                  #6c727c;
+
+
+
+
+
+

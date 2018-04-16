@@ -2,8 +2,8 @@
  * messaging store
  *
  */
-import {tassign} from 'tassign';
-import {MESSAGE_INCREMENT, MESSAGE_DECREMENT} from './actions';
+import { tassign } from 'tassign';
+import { MESSAGE_INCREMENT, MESSAGE_DECREMENT } from './actions';
 
 /**
  * IMessagingState
@@ -20,7 +20,7 @@ export interface IMessagingState {
  */
 export const MESSAGING_INITIAL_STATE: IMessagingState = {
   newMessages: 0
-}
+};
 
 /**
  * increment
@@ -30,7 +30,7 @@ export const MESSAGING_INITIAL_STATE: IMessagingState = {
  * @returns {U}
  */
 function increment(state, action) {
-  return tassign(state, {newMessages: state.newMessages + 1});
+  return tassign(state, { newMessages: state.newMessages + 1 });
 }
 
 /**
@@ -41,7 +41,7 @@ function increment(state, action) {
  * @returns {U}
  */
 function decrement(state, action) {
-  return tassign(state, {newMessages: state.newMessages - 1});
+  return tassign(state, { newMessages: state.newMessages - 1 });
 }
 
 /**
@@ -51,8 +51,10 @@ function decrement(state, action) {
  * @param action
  * @returns {IMessagingState}
  */
-export function messagingReducer(state: IMessagingState = MESSAGING_INITIAL_STATE, action): IMessagingState {
-
+export function messagingReducer(
+  state: IMessagingState = MESSAGING_INITIAL_STATE,
+  action
+): IMessagingState {
   switch (action.type) {
     case MESSAGE_INCREMENT:
       return increment(state, action);

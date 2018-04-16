@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"book","name":"Getting Started","key":"toc1","url":"Overview.htm"},{"type":"book","name":"SMARTShip Dashboard","key":"toc2"},{"type":"book","name":"RMD","key":"toc8"},{"type":"book","name":"Ship Assets View","key":"toc9"},{"type":"book","name":"Case Management","key":"toc11"},{"type":"book","name":"TFOC","key":"toc12"},{"type":"book","name":"Reports","key":"toc13"},{"type":"book","name":"My Profile","key":"toc15"},{"type":"book","name":"Settings","key":"toc16","url":"Settings.htm"},{"type":"item","name":"Known Issues and Restrictions","url":"Known_Issues_and_Restrictions.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

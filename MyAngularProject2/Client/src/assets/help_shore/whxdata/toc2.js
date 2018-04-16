@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data  src=\"toc.js\"  name=\"SMARTShip Dashboard\"><book name=\"Dashboard Overview\" url=\"SmartShip_Dashboard.htm\" src=\"toc3.js\" /><book name=\"Features of Dashboard\" url=\"Home.htm\" src=\"toc4.js\" /><book name=\"Vessel View from Dashboard\" src=\"toc7.js\" /></data>";

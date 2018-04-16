@@ -1,0 +1,25 @@
+<div class="card case-card">
+
+  <h3 class="card-header case-card-header">Dashboard</h3>
+
+  <div class="card-block case-card-block">
+
+    <div style="padding: 20px;">
+      <div class="pull-left">
+        <p>
+          Case items: {{ (cases | async).length }}
+        </p>
+        <p>
+          Last Update: {{ (lastUpdate | async) | date:'mediumTime' }}
+        </p>
+      </div>
+      <div class="pull-right">
+        <p>
+          <button class="btn btn-danger" (click)="clearCases()">Delete All</button>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</div>

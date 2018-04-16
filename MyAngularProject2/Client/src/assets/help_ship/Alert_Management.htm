@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Alert Management</title>
+<link rel="StyleSheet" href="SmartShip_StyleSheet.css" type="text/css" />
+ <script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "9.1";
+</script>
+ <meta name="topic-breadcrumbs" content="Settings" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+ <p>&#160;</p>
+<h1>Alert Management</h1>
+<p class="SmartPara">The Alert Management area allows you to create, edit 
+ and view alerts. </p>
+<p class="SmartPara">To access Alert Management:</p>
+<ul>
+	<li class="SmartBullet"><p class="SmartPara">Click <span style="font-weight: bold;">Settings</span> 
+	 <img src="Images_Rough/settings_icon.png" alt="" style=" border:none; width:100%; max-width:26px;" border="0" /> and select <span style="font-weight: bold;">Alert 
+	 Management</span> from the menu. The <span style="font-weight: bold;">Alert 
+	 Management </span>window appears:</p></li>
+</ul>
+<p class="SmartPara"><img src="Images_Rough/select_AM_shipside.png" alt="" style=" border:none; width:100%; max-width:424px;" border="0" /></p>
+<p class="SmartPara"><img src="Images_Rough/alert_management_Shipside.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<h2>Various Fields of Alert Management Pane</h2>
+<p class="SmartPara">You can view the alerts from the Alert Management 
+ page using the following two filters:</p>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Management 
+	 Alert</span> - This is selected by default. Displays all the alerts 
+	 which are under your company.</p></li>
+</ul>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Vessel 
+	 Alert</span> - Select to view alerts belonging to a specific vessel. 
+	 Upon selection, you are able to further select the vessel from a drop-down 
+	 menu.</p></li>
+</ul>
+<p class="SmartPara"><img src="vessel_alert_list.png" alt="" style=" border:none; width:100%; max-width:562px;" border="0" /></p>
+<p class="Note"><img src="note.png" alt="" style=" border:none; width:100%; max-width:30px;" border="0" />You can also search for vessel 
+ specific alerts using the <span style="font-weight: bold;">Search</span> 
+ field</p>
+<p class="SmartPara">The display pane shows the list of alerts that are 
+ created. It contains the following fields:</p>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Name</span> 
+	 - This is the name of the alert. The category of the alert also appears 
+	 along with this.</p></li>
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">System 
+	 Name</span> - This is the category of system to which the alert belongs. 
+	 The following are the four types of systems:</p></li>
+	<ul style="list-style: disc;">
+		<li class="SmartBullet"><p class="SmartPara">Decision support system</p></li>
+		<li class="SmartBullet"><p class="SmartPara">Engine and machinery</p></li>
+		<li class="SmartBullet"><p class="SmartPara">Hull and cargo</p></li>
+		<li class="SmartBullet"><p class="SmartPara">Navigational system</p></li>
+	</ul>
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Alert 
+	 Type</span> - Indicates the type of alert. It can belong to the following 
+	 category:</p></li>
+	<ul style="list-style: circle;">
+		<li class="SmartBullet"><p class="SmartPara">Technical</p></li>
+		<li class="SmartBullet"><p class="SmartPara">Operational</p></li>
+		<li class="SmartBullet"><p class="SmartPara">Compliance</p></li>
+		<li class="SmartBullet"><p class="SmartPara">Others</p></li>
+	</ul>
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Description</span> 
+	 - Displays the description for the alert.</p></li>
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Created 
+	 Date</span> - Displays the date when the alert was created.</p></li>
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Created 
+	 By</span> - Displays the user who created the alert</p></li>
+</ul>
+<p class="SmartPara">
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Add Alert Conditions','Add_Alert_Conditions.htm','Alert Subscription','Alert_Subscription.htm','Copy Alert','Copy_Alert.htm','Create an Alert','Create_an_Alert.htm','Delete Alert','Delete_Alert.htm','ECA Alert','ECA_Alert.htm','Edit an Alert','Edit_an_Alert.htm','Export Alerts','Export_Alerts.htm','Import Alerts','Import_Alerts.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" alt="Related Topics" style="width:100%; max-width:104px" /></a>
+
+
+ </p>
+<p class="SmartPara">&#160;<a href="Settings.htm"><img src="previous.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" /></a> 
+ &#160;&#160;<a href="Create_an_Alert.htm"><img src="next.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" /></a></p>
+ <p>&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script>
+</body>
+</html>

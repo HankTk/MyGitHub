@@ -1,0 +1,146 @@
+// Core variables and mixins
+@import '../../../../assets/scss/functions';
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+@import '../../../../assets/scss/custom';
+@import '../../../../assets/scss/custom-mixins';
+@import '../../../../assets/scss/variables';
+
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header nav li {
+  width: 80px;
+  height: 70px;
+  &:focus {
+    outline: none;
+  }
+}
+
+// for testing, will create component
+.menu-item-icon {
+  width: 80px;
+  height: 49px;
+}
+// fleet app
+.menu-item-icon.fleet {
+  background-image: url($img-apps+'/nav_ic_fleet.png');
+}
+.menu-item-icon.fleet:hover {
+  background-image: url($img-apps+'/nav_ic_fleet_ovr.png');
+}
+header nav li.active > .menu-item-icon.fleet {
+  background-image: url($img-apps+'/nav_ic_fleet_sel.png');
+}
+// ship app
+.menu-item-icon.ship {
+  background-image: url($img-apps+'/nav_ic_ship.png');
+}
+.menu-item-icon.ship:hover {
+  background-image: url($img-apps+'/nav_ic_ship_ovr.png');
+}
+header nav li.active > .menu-item-icon.ship {
+  background-image: url($img-apps+'/nav_ic_ship_sel.png');
+}
+// notifications app
+.menu-item-icon.notifications {
+  background-image: url($img-apps+'/nav_ic_notifs.png');
+}
+.menu-item-icon.notifications:hover {
+  background-image: url($img-apps+'/nav_ic_notifs_ovr.png');
+}
+header nav li.active > .menu-item-icon.notifications {
+  background-image: url($img-apps+'/nav_ic_notifs_sel.png');
+}
+// asset app
+.menu-item-icon.asset {
+  background-image: url($img-apps+'/nav_ic_assets.png');
+}
+.menu-item-icon.asset:hover {
+  background-image: url($img-apps+'/nav_ic_assets_ovr.png');
+}
+header nav li.active > .menu-item-icon.asset {
+  background-image: url($img-apps+'/nav_ic_assets_sel.png');
+}
+// cases app
+.menu-item-icon.cases {
+  background-image: url($img-apps+'/nav_ic_cases.png');
+}
+.menu-item-icon.cases:hover {
+  background-image: url($img-apps+'/nav_ic_cases_ovr.png');
+}
+header nav li.active > .menu-item-icon.cases {
+  background-image: url($img-apps+'/nav_ic_cases_sel.png');
+}
+// rmd app
+.menu-item-icon.rmd {
+  background-image: url($img-apps+'/nav_ic_rmd.png');
+}
+.menu-item-icon.rmd:hover {
+  background-image: url($img-apps+'/nav_ic_rmd_ovr.png');
+}
+header nav li.active > .menu-item-icon.rmd {
+  background-image: url($img-apps+'/nav_ic_rmd_sel.png');
+}
+// reports app
+.menu-item-icon.reports {
+  background-image: url($img-apps+'/nav_ic_reports.png');
+}
+.menu-item-icon.reports:hover {
+  background-image: url($img-apps+'/nav_ic_reports_ovr.png');
+}
+header nav li.active > .menu-item-icon.reports {
+  background-image: url($img-apps+'/nav_ic_reports_sel.png');
+}
+// cameras app
+.menu-item-icon.cameras {
+  background-image: url($img-apps+'/nav_ic_cameras.png');
+}
+.menu-item-icon.cameras:hover {
+  background-image: url($img-apps+'/nav_ic_cameras_ovr.png');
+}
+header nav li.active > .menu-item-icon.cameras {
+  background-image: url($img-apps+'/nav_ic_cameras_sel.png');
+}
+// chat app
+.menu-item-icon.chat {
+  background-image: url($img-apps+'/nav_ic_chat.png');
+}
+.menu-item-icon.chat:hover {
+  background-image: url($img-apps+'/nav_ic_chat_ovr.png');
+}
+header nav li.active > .menu-item-icon.chat {
+  background-image: url($img-apps+'/nav_ic_chat_sel.png');
+}
+// tfoc app
+.menu-item-icon.tfoc {
+  background-image: url($img-apps+'/nav_ic_tfoc.png');
+}
+.menu-item-icon.tfoc:hover {
+  background-image: url($img-apps+'/nav_ic_tfoc_ovr.png');
+}
+header nav li.active > .menu-item-icon.tfoc {
+  background-image: url($img-apps+'/nav_ic_tfoc_sel.png');
+}
+// eca app
+.menu-item-icon.eca {
+  background-image: url($img-apps+'/nav_ic_eca.png');
+}
+.menu-item-icon.eca:hover {
+  background-image: url($img-apps+'/nav_ic_eca_ovr.png');
+}
+header nav li.active > .menu-item-icon.eca {
+  background-image: url($img-apps+'/nav_ic_eca_sel.png');
+}
+.menu-item-text {
+  text-align: center;
+  color: #cbeefd;
+  font-size: 10px;
+}
+.page-content {
+  position: absolute;
+  top: 100px;
+  margin: 20px;
+}

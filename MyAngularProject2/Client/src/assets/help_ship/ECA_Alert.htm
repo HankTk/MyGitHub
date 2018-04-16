@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>ECA Alert</title>
+<link rel="StyleSheet" href="SmartShip_StyleSheet.css" type="text/css" />
+ <script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "";
+</script>
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+ <p>&#160;</p>
+<h1>ECA Alert</h1>
+<p><span class="SmartChar">Emission Control Areas (ECAs) are sea areas 
+ in which restrictions are established to minimize airborne emissions. 
+ &#160;In your SMARTShip system, you can setup alerts before your vessel 
+ enters ECA.</span></p>
+<p><span class="SmartChar">To edit the configuration of your ECA alert:</span></p>
+<ol>
+	<li class="SmartNumbered"><span class="SmartChar">From the </span><span 
+	 class="SmartChar" style="font-weight: bold;">Alert Management</span><span 
+	 class="SmartChar"> window, under the Name search field, enter 'ECA'. 
+	 The ECA Alert appears below:</span></li>
+</ol>
+<p><img src="eca_alert_correct.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<ol start="2" style="list-style: decimal;">
+	<li class="SmartNumbered"><span class="SmartChar">Click </span><img src="edit_profile1.png" alt="" style=" border:none; width:100%; max-width:27px;" border="0" /> 
+	 to edit the ECA alert configuration. &#160;The <span style="font-weight: bold;">ECA 
+	 Configuration</span> window appears:</li>
+</ol>
+<p><img src="eca_configuration.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<p class="SmartPara">You can setup three alerts before the ship enters 
+ ECA from here. Each alert is generated once the ship reaches a particular 
+ distance as it approaches the ECA.</p>
+<ol start="3" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">Click <span style="font-weight: bold;">Edit</span> 
+	 <img src="edit_profile1.png" alt="" style=" border:none; width:100%; max-width:27px;" border="0" /> 
+	 against an alert to edit. Complete the following fields:</p></li>
+</ol>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Alert 
+	 Condition</span> - Enter the distance in Nautical Miles (NM) before 
+	 the ECA for which you wish to generate the alert. <span style="font-weight: bold;">Example</span>: 
+	 You may want to generate an alert when the ship is 200 NMs before 
+	 the ECA.</p></li>
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Alert 
+	 Description</span> - Enter the description for the alert. <span style="font-weight: bold;">Example</span>: 
+	 '<span style="font-style: italic;">120 NMs before ECA</span>'.</p></li>
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Alert 
+	 Category</span> - Select the alert priority from the list. You can 
+	 select based on the distance at which the ship is away from the ECA. 
+	 <span style="font-weight: bold;">Example</span>: You may want to select 
+	 a Critical priority when the ship is 60 NMs away from the ECA.</p></li>
+</ul>
+<p class="SmartPara"><img src="alert_category.png" alt="" style=" border:none; width:100%; max-width:206px;" border="0" /></p>
+<p class="SmartPara">Similarly, you can setup two more alerts based on 
+ the distance.</p>
+<ol start="4" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">If you wish to monitor 
+	 the change over operation of fuel before entering the ECA, select 
+	 <span style="font-weight: bold;">Yes </span>against <span style="font-weight: bold;">Monitor 
+	 Changeover Operation </span><span>and complete the following details:</span></p></li>
+	<ul>
+		<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Alert 
+		 Condition</span> - Enter the distance before the ECA area for 
+		 which you want to monitor the changing over of fuel.</p></li>
+		<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Alert 
+		 Description</span> - Enter the required description.</p></li>
+		<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Alert 
+		 Category</span> - Select the required alert priority.</p></li>
+	</ul>
+</ol>
+<p class="SmartPara"><img src="monitor_change_over.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<p class="SmartPara" style="margin-left: 40px;">A separate alert is generated 
+ before the alert condition provided with the details of the changeover 
+ operation.</p>
+<ol start="5" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara" style="margin-left: 0px;">Select 
+	 <span style="font-weight: bold;">Subscribers</span>, if you want to 
+	 assign the alert to specific role types. It also allows you to enforce 
+	 the alert and make it mandatory to acknowledge.</p></li>
+</ol>
+<p class="SmartPara" style="margin-left: 0px;"><img src="eca_subscribe.png" alt="" style=" border:none; width:100%; max-width:496px;" border="0" /></p>
+<ol start="6" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara" style="margin-left: 0px;">Once 
+	 all the settings are completed, click <span style="font-weight: bold;">Save 
+	 </span>from the <span style="font-weight: bold;">ECA Configuration</span> 
+	 window.</p></li>
+</ol>
+<p class="SmartPara" style="margin-left: 0px;"><img src="save_eca_configuration.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<p class="SmartPara">&#160;<a href="Copy_Alert.htm"><img src="previous.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" /></a> 
+ &#160;&#160;<a href="Alert_Subscription.htm"><img src="next.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" /></a></p>
+ <p>&#160;</p>
+</body>
+</html>

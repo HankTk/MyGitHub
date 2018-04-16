@@ -1,0 +1,72 @@
+// Core variables and mixins
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "custom";
+
+.carousel-main{
+.panel {
+        background: darken($bg-main, 5%);
+        border: 0;
+        .panel-body {
+            padding: 5px 15px;
+            color: $color-main;
+            .content-ellipsis {
+                padding-top: 3px;
+                padding-bottom: 3px
+            }
+        }
+        .progress {
+            height: 2px;
+            overflow: inherit;
+            background: $blue;
+            margin-bottom: 10px;
+            margin-top: 3px;
+            .progress-bar {
+                position: relative;
+                height: auto;
+                .arrow-end {
+                    position: absolute;
+                    right: -6px;
+                    top: -4px;
+                }
+            }
+        }
+    }
+    .panel-default > .panel-heading {
+        background: $bg-main;
+        -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+        -moz-box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+        box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+        color: $color-main;
+        border-bottom: 1px solid lighten($bg-main, 40%);
+        padding: 5px 10px;
+        line-height: 1.1;
+        .round-icon-small {
+            width: 7px;
+            height: 7px;
+            @include border-radius(50%);
+            display: inline-block;
+            margin-right: 4px;
+            &.green {
+                background: $brand-success;
+            }
+            &.grey {
+                background: #898989;
+            }
+        } 
+        .panel-heading-main {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-transform: uppercase;
+            color: $link-hover-color;
+            padding-top: 4px;
+        }
+    }
+    .owl-item img {
+    display: inherit;
+    width: auto;
+    }
+}
+ 

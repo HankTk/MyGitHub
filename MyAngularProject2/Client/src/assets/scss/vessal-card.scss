@@ -1,0 +1,30 @@
+// Core variables and mixins
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "custom";
+
+.sidebar-brand-info {
+            .progress {
+                height: 2px;
+                overflow: inherit;
+                background: $blue;
+                margin-bottom: 10px;
+                margin-top: 3px;
+                .progress-bar {
+                    position: relative;
+                    height: auto;
+                    .arrow-end {
+                        position: absolute;
+                        right: -6px;
+                        top: -4px;
+                    }
+                }
+            }
+            h3 {
+                color: $link-hover-color;
+            }
+            h4 {
+                color: $color-main;
+            }
+        }

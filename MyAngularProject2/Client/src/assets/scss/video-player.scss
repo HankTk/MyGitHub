@@ -1,0 +1,73 @@
+// Core variables and mixins
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "custom";
+
+.video-container{
+    position: absolute;
+    top: 50px;
+    bottom:70px;
+    right: 30px;
+    left: 30px;
+    text-align: center;
+    .video-wrapper{
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        .video-control-wrapper{ 
+            position: absolute;
+            
+            background: rgba(0,0,0,0.5);
+            height: 38px;
+            .video-control{
+                width: 14px;
+                height: 14px; 
+                background: url(../images/play-control-small.png) no-repeat;
+                display: inline-block;
+                float: left;
+                margin-top: 12px;
+                cursor: pointer;
+            }
+            &.bottom{
+                bottom: 0;
+            left: 0;
+            right: 0;
+            }
+            &.top-left{
+                top: 0;
+                left: 0;
+                width: 25px;
+                height: 45px;
+                padding-left: 3px;
+                .minimise-icon{
+                   font-size: 20px;
+                    padding-right: 3px;
+                    padding-top: 7px;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .circle-red{
+            width:8px;
+            height: 8px;
+            @include border-radius(50%);
+            display: inline-block;
+            background: $brand-danger
+        }
+        .video-close{
+            background: $brand-info;
+            padding: 3px;
+            top: 5px;
+            right: 5px;
+            position: absolute;
+            font-size: 26px;
+            line-height: 16px;
+            cursor: pointer;
+        }
+    }
+    img{
+        height: 100%;
+    }
+}

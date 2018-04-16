@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Add Alert Conditions</title>
+<link rel="StyleSheet" href="SmartShip_StyleSheet.css" type="text/css" />
+ <script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "2.1.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Settings > Alert Management" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+ <p>&#160;</p>
+<h1>Add Alert Conditions</h1>
+<p class="SmartPara">An alert is generated when a condition set by you 
+ is met by the sensor or an asset. &#160;</p>
+<p class="SmartPara"><span style="font-weight: bold;">Example</span>: You 
+ may want to generate an alert when the value from the sensor '<span style="font-style: italic;">BOOSTER_PUMP_DISCHARGE_PRESSURE_HIGH</span>' 
+ is greater than 100.</p>
+<p class="SmartPara">You can also combine multiple conditions and values 
+ using various operators and numerical values.</p>
+<p class="SmartPara">To set the conditions:</p>
+<ol>
+	<li class="SmartNumbered"><p class="SmartPara">Once the alert details 
+	 are completed from the left pane, hover over to the right pane of 
+	 the alert create window. </p></li>
+</ol>
+<p class="SmartPara"><img src="alert_conditon_area.png" alt="" style=" border:none; width:100%; max-width:845px;" border="0" /></p>
+<ol start="2" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">Build your own custom 
+	 conditions using the following:</p></li>
+</ol>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara"><span style="font-weight: bold;">Search</span> 
+	 - Allows you to search and select the various sensors to add to the 
+	 alert condition. Once a sensor is selected, it appears in the grid 
+	 below the operators. See the below image for reference.</p></li>
+</ul>
+<p class="SmartPara"><img src="alert_condition_-_sensor_select.png" alt="" style=" border:none; width:100%; max-width:433px;" border="0" /></p>
+<p class="SmartPara" style="margin-left: 40px;">To add this to the condition, 
+ click or drag-drop &#160;the sensor to add to the conditions grid below.</p>
+<p class="SmartPara" style="margin-left: 0px;"><img src="sensor_drag_drop.png" alt="" style=" border:none; width:100%; max-width:494px;" border="0" /></p>
+<p class="SmartPara" style="margin-left: 40px;">Similar to above, you can 
+ add multiple sensors to the conditions grid.</p>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Arithmetic and conditional operators grid</span> 
+	 - This grid allows you to add various arithmetic operators like <span 
+	 style="font-weight: bold;">+</span>, -, <span style="font-weight: bold;">*</span> 
+	 and so on and conditional operators like <span style="font-weight: bold;">average</span>, 
+	 <span style="font-weight: bold;">sum</span>, <span style="font-weight: bold;">previous</span> 
+	 to the condition. You can click or drag-drop to add them to the conditions 
+	 grid.</p></li>
+</ul>
+<p class="SmartPara" style="margin-left: 0px;"><img src="operator_drag_drop.png" alt="" style=" border:none; width:100%; max-width:434px;" border="0" /></p>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Numbers</span> - The numbers grid allows 
+	 you to add numerical values to your condition. You can click or drag-drop 
+	 to add them to the conditions grid.</p></li>
+</ul>
+<p class="SmartPara" style="margin-left: 0px;"><img src="number_drag_drop.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<p class="Note" style="font-weight: bold;"><span style="font-weight: normal;"><img src="note.png" alt="" style=" border:none; width:100%; max-width:30px;" border="0" />Click </span>Clear All<span style="font-weight: normal;">, 
+ if you want to clear the elements from the conditions grid</span></p>
+<p class="SmartPara">A condition built using the above method is given 
+ below:</p>
+<p class="SmartPara"><img src="condition_set.PNG" alt="" style=" border:Solid 1px #000000; width:100%; max-width:800px;" border="1" /></p>
+<p class="SmartPara">Here, an alert is generated when BOOSTER_PUMP_1_MOTOR_OVERLOAD_ALARAM 
+ has a value greater than 100 as well as BOOSTER_PUMP_1_PUMP_MOTOR_CURRENT_STB 
+ has a value greater than 200.</p>
+<ol start="3" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">Once the condition is 
+	 built, click <span style="font-weight: bold;">Save</span>. The alert 
+	 is created.</p></li>
+</ol>
+<h3 class="SmartPara"><span>C</span>reate A Vessel Alert</h3>
+<ol>
+	<li class="SmartNumbered">Select <span style="font-weight: bold;">Vessel 
+	 Alert</span><span>. </span></li>
+	<li class="SmartNumbered"><span>From the </span><span style="font-weight: bold;">Vessel</span><span> 
+	 drop-down, select the required vessel.</span></li>
+</ol>
+<p><img src="vessel_drop.png" alt="" style=" border:Solid 1px #000000; width:100%; max-width:460px;" border="1" /></p>
+<ol start="3" style="list-style: decimal;">
+	<li class="SmartNumbered"><span>Complete by following the same steps 
+	 on creating a management alert and add the conditions. </span></li>
+</ol>
+<p class="SmartPara" style="font-weight: bold;">&#160;</p>
+ <p>&#160;</p>
+</body>
+</html>

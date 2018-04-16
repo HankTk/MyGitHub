@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Settings","url":"Settings.htm#bc-1"},{"type":"book","name":"Alert Management","key":"toc4","url":"Alert_Management.htm"},{"type":"item","name":"Alert Subscription","url":"Alert_Subscription.htm"},{"type":"book","name":"Report Configuration","key":"toc5","url":"Report_Configuration.htm"},{"type":"item","name":"Report Subscription","url":"Report_Subscription.htm"},{"type":"book","name":"User Management","key":"toc6","url":"User_Management.htm"},{"type":"book","name":"Role Management","key":"toc7","url":"Role_Management.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

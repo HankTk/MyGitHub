@@ -58,7 +58,18 @@ export default class AuthService {
 
         // Issue token, when login success
         const access_token = createToken({username, password});
-        res.status(200).json({access_token});
+
+        const index = userdb.users.findIndex(user => user.username === username && user.password === password);
+        const userObject = userdb.users[index];
+        const responseUserObject = {};
+        for (let p in userObject) {
+            if (p != 'password') {
+                responseUserObject[p] = userObject[p];
+            }
+        }
+        responseUserObject['token'] = access_token;
+
+        res.status(200).json(responseUserObject);
 
         // Respnse
         /*

@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Import Alerts</title>
+<link rel="StyleSheet" href="SmartShip_StyleSheet.css" type="text/css" />
+ <script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "9.1.0_7";
+</script>
+ <meta name="topic-breadcrumbs" content="Settings > Alert Management" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+ <p>&#160;</p>
+<h1>Import Alerts &#160;&#160;&#160;&#160;&#160;&#160;&#160;</h1>
+<p class="SmartPara">The Import feature in Alert Management allows you 
+ to bulk import alert configurations to your SMARTShip system. This is 
+ achieved by importing a tab delimited text file which contains the alert 
+ configuration details in a row column format.</p>
+<p class="SmartPara">A sample configuration file used to import alert configurations 
+ is attached below. The custom text file which you use to import the alert 
+ configurations must contain the alert details in the same format as the 
+ given file below. &#160;To view or edit this file using Microsoft Excel:</p>
+<ol>
+	<li class="SmartNumbered"><p class="SmartPara">Open Microsoft Excel 
+	 and under <span style="font-weight: bold;">File</span>, select <span 
+	 style="font-weight: bold;">Open</span>. </p></li>
+	<li class="SmartNumbered"><p class="SmartPara">Browse and select the 
+	 required configuration file. The following <span style="font-weight: bold;">Text 
+	 Import Wizard</span> appears:</p></li>
+</ol>
+<p class="SmartPara"><img src="Images_Rough/alert_text_excel_1.png" alt="" style=" border:none; width:100%; max-width:615px;" border="0" /></p>
+<ol start="3" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">Complete all three steps 
+	 with the default settings. The alert configuration file opens in a 
+	 tabular format. The headers contains the field names.</p></li>
+</ol>
+<p class="SmartPara"><a href="AlertTemplate.txt">AlertTemplate.txt</a></p>
+<p class="SmartPara">The following table contains the mandatory fields 
+ (indicated using * in the header row) in the text file.</p>
+<table class="Style1" style="left: 0px; top: 310px; height: 355px; border-collapse: separate; 
+		 border-collapse: separate;" cellspacing="1" border="1">
+	<col />
+	<col />
+	<col />
+	<tr class="t1st">
+		<td><p class="SmartPara">Field Name</p></td>
+		<td><p class="SmartPara">Expected Values</p></td>
+		<td><p class="SmartPara">Comment</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">name</p></td>
+		<td><p class="SmartPara">Can contain alphanumeric values,words/sentences/special 
+		 characters</p></td>
+		<td><p class="SmartPara">&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">description</p></td>
+		<td><p class="SmartPara">specify the alert description</p></td>
+		<td><p class="SmartPara">&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">systemxid</p></td>
+		<td><p class="SmartPara">1</p>
+		<p class="SmartPara">2</p>
+		<p class="SmartPara">3</p>
+		<p class="SmartPara">4</p></td>
+		<td><p class="SmartPara">1 - Hull and Cargo</p>
+		<p class="SmartPara">2 - Navigational System</p>
+		<p class="SmartPara">3 - Engine and Machinery</p>
+		<p class="SmartPara">4 - Decision Support System</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">alerttype</p></td>
+		<td><p class="SmartPara">OPRN</p>
+		<p class="SmartPara">TECH</p>
+		<p class="SmartPara">COMP</p>
+		<p class="SmartPara">Others</p></td>
+		<td><p class="SmartPara">&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">alertpriorityxid</p></td>
+		<td><p class="SmartPara">1</p>
+		<p class="SmartPara">2</p>
+		<p class="SmartPara">3</p>
+		<p class="SmartPara">4</p></td>
+		<td><p class="SmartPara">1 - Critical</p>
+		<p class="SmartPara">2 - High</p>
+		<p class="SmartPara">3 - Medium</p>
+		<p class="SmartPara">4 - Low</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">delay</p></td>
+		<td><p class="SmartPara">non-negative numeric value</p></td>
+		<td><p class="SmartPara">&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">lastdelay</p></td>
+		<td><p class="SmartPara">non-negative numeric value</p></td>
+		<td><p class="SmartPara">&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">uiformulastructure</p></td>
+		<td><p class="SmartPara">Alert condition in the format specified</p></td>
+		<td><p class="SmartPara">&#160;</p></td>
+	</tr>
+</table>
+<p class="SmartPara">The field uiformulastructure requires the alert conditions 
+ in a different format than the normal alert condition format. The below 
+ table lists the various examples of this for better understanding:</p>
+<table style=" border-collapse:separate; width:100%; max-width:400px;" cellspacing="0" border="1">
+	<col />
+	<col />
+	<tr class="t1st">
+		<td bgcolor="#CCCCCC"><p class="SmartPara" style="font-weight: bold;">Formula 
+		 </p></td>
+		<td bgcolor="#CCCCCC"><p class="SmartPara" style="font-weight: bold;">uiformulastructure 
+		 format</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">GPS_HTD_RUDDER_ANGLE&gt;0</p></td>
+		<td><p class="SmartPara">tag:GPS_HTD_RUDDER_ANGLE,op:&gt;,num:0</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">AG_HTD_RATE_OF_TURN&gt;12</p></td>
+		<td><p class="SmartPara">tag:AG_HTD_RATE_OF_TURN,op:&gt;,num:1,num:2</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">AG_HTD_RUDDER_ANGLE&gt;5</p></td>
+		<td><p class="SmartPara">tag:AG_HTD_RUDDER_ANGLE,op:&gt;,num:5</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">ME_RPM&gt;280</p></td>
+		<td><p class="SmartPara">tag:ME_RPM,op:&gt;,num:2,num:8,num:0</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">(AG_HTD_RUDDER_ANGLE&gt;25)|(WI_MWV_WIND_DIRECTION_DEGREE&gt;20)</p></td>
+		<td><p class="SmartPara">op:(,tag:AG_HTD_RUDDER_ANGLE,op:&gt;,num:2,num:5,op:),op:|,op:(,tag:WI_MWV_WIND_DIRECTION_DEGREE,op:&gt;,num:2,num:0,op:)</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">AG_HTD_RUDDER_ANGLE&gt;15</p></td>
+		<td><p class="SmartPara">tag:AG_HTD_RUDDER_ANGLE,op:&gt;,num:1,num:5</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">AG_HTD_RUDDER_ANGLE&lt;45</p></td>
+		<td><p class="SmartPara">tag:AG_HTD_RUDDER_ANGLE,op:&lt;,num:4,num:5</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">GDS_COMMUNICATION_FAIL&lt;1</p></td>
+		<td><p class="SmartPara">tag:GDS_COMMUNICATION_FAIL,op:&lt;,num:1</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">AG_HTD_RATE_OF_TURN&lt;50</p></td>
+		<td><p class="SmartPara">tag:AG_HTD_RATE_OF_TURN,op:&lt;,num:5,num:0</p></td>
+	</tr>
+	<tr>
+		<td><p class="SmartPara">AG_HTD_RUDDER_ANGLE&gt;100</p></td>
+		<td><p class="SmartPara">tag:AG_HTD_RUDDER_ANGLE,op:&gt;,num:1,num:0,num:0</p></td>
+	</tr>
+</table>
+<p class="SmartPara">To import:</p>
+<ol>
+	<li class="SmartNumbered"><p class="SmartPara">From the <span style="font-weight: bold;">Alert 
+	 Management</span> window, click <span style="font-weight: bold;">Import</span>. 
+	 The <span style="font-weight: bold;">Import Alert Configuration</span>s 
+	 box appears: </p></li>
+</ol>
+<p class="SmartPara"><img src="Images_Rough/select_import.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<p class="SmartPara"><img src="Images_Rough/import_alert_configuration_box.png" alt="" style=" border:none; width:100%; max-width:517px;" border="0" /></p>
+<ol start="2" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">Click <span style="font-weight: bold;">Select 
+	 Alert Configuration File, </span>navigate and select the required 
+	 alert configuration custom text file.</p></li>
+</ol>
+<p class="SmartPara"><img src="Images_Rough/import_alerts_validate.png" alt="" style=" border:none; width:100%; max-width:576px;" border="0" /></p>
+<ol start="3" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara">Once the import file 
+	 is selected, click <span style="font-weight: bold;">Validate Import 
+	 File</span> to verify whether the selected file is within the required 
+	 specifications or format. It also checks whether the selected file 
+	 has alerts which are already existing in your SMARTShip system in 
+	 order to avoid any duplication.</p></li>
+</ol>
+<p class="SmartPara"><img src="Images_Rough/validate_import_error.png" alt="" style=" border:none; width:100%; max-width:491px;" border="0" /></p>
+<ol start="4" style="list-style: decimal;">
+	<li class="SmartNumbered"><p class="SmartPara" style="margin-left: 0px;">If 
+	 there are no errors, click <span style="font-weight: bold;">Create 
+	 Alert Configuration</span> which appears below the error pane. The 
+	 alerts are imported to your SMARTShip system.</p></li>
+</ol>
+<p class="SmartPara" style="margin-left: 0px;"><img src="Images_Rough/create_alert_configuration_rough.png" alt="" style=" border:none; width:100%; max-width:517px;" border="0" /></p>
+<p class="SmartPara">&#160;</p>
+ <p>&#160;</p>
+</body>
+</html>

@@ -1,28 +1,62 @@
 {
   "users": [
     {
-      "id": 1,
+      "userid": 1001,
       "username": "admin",
+      "password": "admin",
       "email": "admin@email.com",
-      "password": "admin"
+      "userRole": "admin",
+      "app_env": "shore",
+      "configexists": true,
+      "companyid": "1",
+      "message": "",
+      "pagesize": 100,
+      "loginAttempt": 0
     },
     {
-      "id": 2,
+      "userid": 1002,
       "username": "hoge",
+      "password": "hoge",
       "email": "hoge@email.com",
-      "password": "hoge"
+      "userRole": "admin",
+      "app_env": "shore",
+      "configexists": true,
+      "companyid": "1",
+      "message": "",
+      "pagesize": 100,
+      "loginAttempt": 0
     },
     {
-      "id": 3,
+      "userid": 1003,
       "username": "foo",
+      "password": "foo",
       "email": "foo@email.com",
-      "password": "foo"
+      "userRole": "admin",
+      "app_env": "shore",
+      "configexists": true,
+      "companyid": "1",
+      "message": "",
+      "pagesize": 100,
+      "loginAttempt": 0
     },
     {
-      "id": 4,
+      "userid": 1004,
       "username": "bar",
+      "password": "bar",
       "email": "bar@email.com",
-      "password": "bar"
+      "userRole": "admin",
+      "app_env": "shore",
+      "configexists": true,
+      "companyid": "1",
+      "message": "",
+      "pagesize": 100,
+      "loginAttempt": 0
+    },
+    {
+      "id": 5,
+      "username": "fleetmanager",
+      "email": "fleetmanager@email.com",
+      "password": "1"
     }
   ]
 }

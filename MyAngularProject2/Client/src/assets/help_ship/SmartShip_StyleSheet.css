@@ -1,0 +1,227 @@
+﻿span.SmartChar {
+                font-size:11pt;
+                font-family:Calibri;
+}
+p.SmartPara {
+             font-family:Calibri;
+             font-size:11pt;
+             border-left-style:None;
+             border-right-style:None;
+             border-top-style:None;
+             border-bottom-style:None;
+             color:#000000;
+}
+p.breadcrumbs {
+               font-family:Arial;
+}
+h1 {
+    font-weight:bold;
+    margin-top:14pt;
+    margin-bottom:14pt;
+    margin-left:0pt;
+    margin-right:0pt;
+    page-break-after:avoid;
+    font-family:Calibri;
+    color:#005e89;
+    font-size:18.5pt;
+}
+h2 {
+    font-weight:bold;
+    font-size:16pt;
+    margin-top:14pt;
+    margin-bottom:14pt;
+    margin-left:0pt;
+    margin-right:0pt;
+    page-break-after:avoid;
+    font-family:Calibri;
+    color:#005e89;
+}
+h3 {
+    font-weight:bold;
+    font-size:13.5pt;
+    margin-top:14pt;
+    margin-bottom:14pt;
+    margin-left:0pt;
+    margin-right:0pt;
+    page-break-after:avoid;
+    font-family:Calibri;
+    color:#005e89;
+}
+h4 {
+    font-weight:bold;
+    font-size:12pt;
+    margin-top:14pt;
+    margin-bottom:14pt;
+    margin-left:0pt;
+    margin-right:0pt;
+    page-break-after:avoid;
+    font-family:Calibri;
+    color:#005e89;
+}
+h5 {
+    font-weight:bold;
+    margin-top:14pt;
+    margin-bottom:14pt;
+    margin-left:0pt;
+    margin-right:0pt;
+    page-break-after:avoid;
+    font-family:Calibri;
+    color:#005e89;
+    font-size:11pt;
+}
+h6 {
+    font-weight:bold;
+    font-size:7pt;
+    margin-top:14pt;
+    margin-bottom:14pt;
+    margin-left:0pt;
+    margin-right:0pt;
+    page-break-after:avoid;
+    font-family:Verdana;
+}
+a {
+   display:inline;
+   font-family:Calibri;
+   color:#800000;
+   text-decoration:underline;
+}
+a.breadcrumbs {
+               display:inline;
+               font-family:Arial;
+               color:#800000;
+}
+a.dropspot {
+            display:inline;
+            font-family:Arial;
+            color:#800000;
+}
+a.expandspot {
+              display:inline;
+              font-family:Arial;
+              color:#800000;
+}
+a.glossterm {
+             display:inline;
+             font-family:Arial;
+             color:#800000;
+}
+img.SmartImage {
+                width:800px;
+                height:600px;
+                border-left-style:Solid;
+                border-left-width:1px;
+                border-left-color:#000000;
+                border-right-style:Solid;
+                border-right-width:1px;
+                border-right-color:#000000;
+                border-top-style:Solid;
+                border-top-width:1px;
+                border-top-color:#000000;
+                border-bottom-style:Solid;
+                border-bottom-width:1px;
+                border-bottom-color:#000000;
+                float:left;
+                margin-left:0px;
+}
+li.SmartNumbered {
+                  font-size:11pt;
+                  font-family:Calibri;
+                  color:#000000;
+}
+rh-list.SmartMultiLevel {
+                         x-lvl-4-type:decimal;
+                         x-lvl-4-format:&o<x>&c;
+                         x-lvl-4-margin:60px;
+                         x-lvl-5-format:&o<x>&c;
+                         x-lvl-5-margin:80px;
+                         x-lvl-6-type:lower-roman;
+                         x-lvl-6-format:&o<x>&c;
+                         x-lvl-6-margin:100px;
+                         x-lvl-8-type:lower-alpha;
+                         x-lvl-8-margin:140px;
+                         x-lvl-7-format:<x>.;
+                         x-lvl-7-margin:120px;
+                         x-lvl-9-type:lower-roman;
+                         x-lvl-9-margin:160px;
+                         x-lvl-1-type:disc;
+                         x-lvl-1-format:<x>;
+                         x-lvl-2-type:square;
+                         x-lvl-2-format:<x>;
+                         x-lvl-2-margin:20px;
+                         x-lvl-3-type:circle;
+                         x-lvl-3-format:<x>;
+                         x-lvl-3-margin:40px;
+                         x-level-count:9;
+                         x-lvl-1-margin:30px;
+                         x-lvl-1-text-indent:-30px;
+                         x-lvl-1-pfx-class:rls-1-SmartMultiLevel;
+}
+table.Style1 {
+              font-family:Arial;
+              border-left-style:Solid;
+              border-left-width:1px;
+              border-left-color:#000000;
+              border-right-style:Solid;
+              border-right-width:1px;
+              border-right-color:#000000;
+              border-top-style:Solid;
+              border-top-width:1px;
+              border-top-color:#000000;
+              border-bottom-style:Solid;
+              border-bottom-width:1px;
+              border-bottom-color:#000000;
+              x-1st-row:1;
+              x-1st-row-name:t1st;
+              text-align:Left;
+              x-border-spacing:1px;
+}
+table.Style1 tr.t1st td {
+                         font-family:Arial;
+                         color:#000000;
+                         border-left-style:None;
+                         border-left-color:#000000;
+                         border-right-style:None;
+                         border-right-color:#000000;
+                         border-top-style:None;
+                         border-top-color:#000000;
+                         border-bottom-style:None;
+                         border-bottom-color:#000000;
+                         background-color:#c0c0c0;
+                         font-weight:bold;
+                         font-size:13pt;
+}
+li.SmartBullet {
+                font-size:11pt;
+                font-family:Calibri;
+                list-style:url("white_icon.png");
+}
+p.Note {
+        font-size:11pt;
+        text-indent:-;
+        margin-left:0pt;
+        font-family:Calibri;
+        border-left-style:Solid;
+        border-right-style:Solid;
+        border-top-style:Solid;
+        border-bottom-style:Solid;
+        border-left-width:1px;
+        border-right-width:1px;
+        border-top-width:1px;
+        border-bottom-width:1px;
+        border-left-color:#006600;
+        border-right-color:#006600;
+        border-top-color:#006600;
+        border-bottom-color:#006600;
+        background-color:#ccffcc;
+}
+span.rls-1-SmartMultiLevel {
+                            font-family:Calibri;
+}
+li.Style2 {
+           list-style:circle;
+}
+a.SMARTHyperlink {
+                  background-color:#ffffff;
+}
+body {
+}

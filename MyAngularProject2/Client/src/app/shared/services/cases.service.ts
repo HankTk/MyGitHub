@@ -2,17 +2,16 @@
  * CasesService
  *
  */
-import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {NgRedux, select} from '@angular-redux/store';
-import {IAppState} from '../../redux/store';
-import {BaseApiService} from './BaseApiService';
-import {CASES_LOAD} from '../../redux/cases/actions';
-import {API_REQUEST_ERROR, API_REQUEST_SUCCESS} from '../../redux/actions';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { NgRedux } from '@angular-redux/store';
+import { IAppState } from './../../redux/store';
+import { BaseApiService } from './BaseApiService';
+import { CASES_LOAD } from '../../redux/cases/actions';
+import { API_REQUEST_ERROR, API_REQUEST_SUCCESS } from '../../redux/actions';
 
 @Injectable()
 export class CasesService extends BaseApiService {
-
   private readonly resourceName = '/api/cases';
 
   /**
@@ -23,7 +22,7 @@ export class CasesService extends BaseApiService {
    */
   constructor(
     protected httpClient: HttpClient,
-    protected ngRedux: NgRedux<IAppState>,
+    protected ngRedux: NgRedux<IAppState>
   ) {
     super(httpClient, ngRedux);
   }
@@ -34,13 +33,15 @@ export class CasesService extends BaseApiService {
    */
   loadCases() {
     const resource = this.resourceName;
-    super.loadData(resource,
-      (res) => {
+    super.loadData(
+      resource,
+      res => {
         // Dispatch Load Event
-        this.ngRedux.dispatch({type: CASES_LOAD, data: res});
+        this.ngRedux.dispatch({ type: CASES_LOAD, data: res });
         this.callbackSuccess(res);
       },
-      (err) => this.callbackError(err));
+      err => this.callbackError(err)
+    );
   }
 
   /**
@@ -51,9 +52,12 @@ export class CasesService extends BaseApiService {
    */
   addCase(cases) {
     const resource = this.resourceName;
-    super.addData(resource, cases,
-      (res) => this.callbackSuccess(res),
-      (err) => this.callbackError(err));
+    super.addData(
+      resource,
+      cases,
+      res => this.callbackSuccess(res),
+      err => this.callbackError(err)
+    );
   }
 
   /**
@@ -64,9 +68,11 @@ export class CasesService extends BaseApiService {
    */
   removeCase(cases) {
     const resource = this.resourceName + '/' + cases.id;
-    super.removeData(resource,
-      (res) => this.callbackSuccess(res),
-      (err) => this.callbackError(err));
+    super.removeData(
+      resource,
+      res => this.callbackSuccess(res),
+      err => this.callbackError(err)
+    );
   }
 
   /**
@@ -76,9 +82,12 @@ export class CasesService extends BaseApiService {
    */
   updateCase(cases) {
     const resource = this.resourceName + '/' + cases.id;
-    super.updateData(resource, cases,
-      (res) => this.callbackSuccess(res),
-      (err) => this.callbackError(err));
+    super.updateData(
+      resource,
+      cases,
+      res => this.callbackSuccess(res),
+      err => this.callbackError(err)
+    );
   }
 
   /**
@@ -87,9 +96,11 @@ export class CasesService extends BaseApiService {
    */
   clearCases() {
     const resource = this.resourceName;
-    super.clearAll(resource,
-      (res) => this.callbackSuccess(res),
-      (err) => this.callbackError(err));
+    super.clearAll(
+      resource,
+      res => this.callbackSuccess(res),
+      err => this.callbackError(err)
+    );
   }
 
   /**
@@ -109,5 +120,4 @@ export class CasesService extends BaseApiService {
   callbackError(err) {
     super.callbackError(err);
   }
-
 }

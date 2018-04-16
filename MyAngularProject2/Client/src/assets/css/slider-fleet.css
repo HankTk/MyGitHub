@@ -1,0 +1,57 @@
+/* custom variables */
+/* 007ab9*/
+/* #7a9441*/
+/* #4573a7*/
+.carousel-main .panel {
+  background: #171e28;
+  border: 0; }
+  .carousel-main .panel .panel-body {
+    padding: 5px 15px;
+    color: #fff; }
+    .carousel-main .panel .panel-body .content-ellipsis {
+      padding-top: 3px;
+      padding-bottom: 3px; }
+  .carousel-main .panel .progress {
+    height: 2px;
+    overflow: inherit;
+    background: #4573a7;
+    margin-bottom: 10px;
+    margin-top: 3px; }
+    .carousel-main .panel .progress .progress-bar {
+      position: relative;
+      height: auto; }
+      .carousel-main .panel .progress .progress-bar .arrow-end {
+        position: absolute;
+        right: -6px;
+        top: -4px; }
+.carousel-main .panel-default > .panel-heading {
+  background: #202a38;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-bottom: 1px solid #748db0;
+  padding: 5px 10px;
+  line-height: 1.1; }
+  .carousel-main .panel-default > .panel-heading .round-icon-small {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px; }
+    .carousel-main .panel-default > .panel-heading .round-icon-small.green {
+      background: #2aa32f; }
+    .carousel-main .panel-default > .panel-heading .round-icon-small.grey {
+      background: #898989; }
+  .carousel-main .panel-default > .panel-heading .panel-heading-main {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #e0ca7a;
+    padding-top: 4px; }
+.carousel-main .owl-item img {
+  display: inherit;
+  width: auto; }
+
+/*# sourceMappingURL=slider-fleet.css.map */

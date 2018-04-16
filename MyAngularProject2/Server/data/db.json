@@ -25,5 +25,18 @@
 			"description": "Test1 - description",
 			"description2todo": "814e55e8-bb11-48f7-82a2-a19494c8655b"
 		}
+	],
+	"appdata": [
+		{ "displayName": "MY FLEET" },
+		{ "displayName": "SHIP" },
+		{ "displayName": "NOTIFICATIONS" },
+		{ "displayName": "ASSET" },
+		{ "displayName": "CASES" },
+		{ "displayName": "RMD" },
+		{ "displayName": "REPORTS" },
+		{ "displayName": "CAMERAS" },
+		{ "displayName": "CHAT" },
+		{ "displayName": "TFOC" },
+		{ "displayName": "ECA" }
 	]
 }

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Alert Area</title>
+<link rel="StyleSheet" href="SmartShip_StyleSheet.css" type="text/css" />
+ <script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "2.2.2.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="SMARTShip Dashboard > Features of Dashboard > Alert Pane" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+ <p>&#160;</p>
+<h1>Alert Pane</h1>
+<p class="SmartPara">An alert is a notification generated when a certain 
+ condition is met. In SMARTShip, an alert is generated when an input condition 
+ or combination of conditions is met by a sensor or an asset. &#160;</p>
+<p class="SmartPara"><span style="font-weight: bold;">Example</span>: You 
+ may want to generate an alert when the value from the sensor '<span style="font-style: italic;">BOOSTER_PUMP_DISCHARGE_PRESSURE_HIGH</span>' 
+ is greater than 100.The alert pane appears on the left-hand side of your 
+ SMARTShip dashboard. All your pre-configured as well as subscribed alerts 
+ appear here. </p>
+<p class="SmartPara"><img src="Images_Rough/alert_area_rough.png" alt="" style=" border:none; width:100%; max-width:288px;" border="0" /></p>
+<p class="SmartPara">The colored alert bar in the alert pane categorizes 
+ alerts based on their severity. Clicking on the &#160;required color category 
+ displays the alerts corresponding to it. By default, only active alerts 
+ appears here. </p>
+<p class="SmartPara"><img src="Images_Rough/alert_meter_rough.png" alt="" style=" border:none; width:100%; max-width:253px;" border="0" /></p>
+<p class="SmartPara"><img src="Images_Rough/alert_category.png" alt="" style=" border:none; width:100%; max-width:288px;" border="0" /></p>
+<p class="SmartPara" style="color: #000000;">In the above image, clicking 
+ on the yellow color displays the alerts belonging to the 'medium' category 
+ in the alert pane.</p>
+<p class="SmartPara" style="color: #000000;">In the alert pane each alert 
+ appears in the form of separate cards. Hovering your mouse pointer over 
+ an alert card displays the alert details next to it in a separate pane. 
+ Please see the below image for reference.</p>
+<p class="SmartPara" style="color: #000000;"><img src="Images_Rough/hover_over_alert.png" alt="" style=" border:none; width:100%; max-width:609px;" border="0" /></p>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;">To 
+	 expand the alert area as a list view, click <img src="Images_Rough/list_view_alerts.png" alt="" style=" border:none; width:100%; max-width:14px;" border="0" /> 
+	 in the alert area. The alert area appears as shown in the image below:</p></li>
+</ul>
+<p class="SmartPara" style="margin-left: 0px;"><img src="Images_Rough/alert_area_expanded_correct.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /></p>
+<p class="SmartPara" style="margin-left: 0px;">The list view has the list 
+ of all alerts in a page format which you navigate. The list view has the 
+ following fields:</p>
+<ul style="list-style: disc;">
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Vessel - </span>Indicates the vessel to 
+	 which the alert belongs.</p></li>
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Alert Name</span> - Name of the alert</p></li>
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">System</span> - System to which the alert 
+	 belongs</p></li>
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Alert Type</span> - Type of the alert (operational, 
+	 technical and so on)</p></li>
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Alert Description</span> - Description 
+	 of the alert</p></li>
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Active/Inactive</span> - Indicates whether 
+	 the alert is in active or inactive status. Active alert is indicated 
+	 by a green circle <img src="Images_Rough/alert_online.png" alt="" style=" border:none; width:100%; max-width:17px;" border="0" /> and inactive 
+	 alert is indicated using a grey circle <img src="Images_Rough/alert_offline_indicator.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" /></p></li>
+	<li class="SmartBullet"><p class="SmartPara" style="margin-left: 0px;"><span 
+	 style="font-weight: bold;">Last Updated</span> - Indicates the last 
+	 updated time of the alert</p></li>
+</ul>
+<p class="Note"><img src="note.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" />If you wish to go back to 
+ alert card area, click <img src="Images_Rough/return_to_alert_card_icon.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" /></p>
+<img src="Images_Rough/return_to_alert_card.png" alt="" style=" border:none; width:100%; max-width:802px;" border="0" /> 
+<p class="Note"><img src="note.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" />If you wish to create or 
+ subscribe to new alerts or edit an existing one, refer to the topic <a 
+	 href="Alert_Management.htm">Alert Management</a></p>
+<h4>
+
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Acknowledge and Analyze Alerts from Alert Area','Acknowledge_and_Analyze_Alerts_from_Alert_Area.htm','Alert Card','Alert_Card.htm','Analyze Alerts','Analyze_Alerts.htm','Search Alerts','Search_Alerts.htm','Tabs in Alert Area','Tabs_in_Alert_Area.htm');return false;" title="Related Topics"><img src="ss_btn_related_topics.gif" border="0" alt="Related Topics" style="width:100%; max-width:104px" /></a>
+
+
+ </h4>
+<p class="SmartPara"><a href="Various_Types_of_Map_View.htm"><img src="previous.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" /></a> &#160;&#160;<a href="Search_Alerts.htm"><img src="next.png" alt="" style=" border:none; width:100%; max-width:25px;" border="0" /></a></p>
+ <p>&#160;</p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script>
+</body>
+</html>

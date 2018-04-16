@@ -1,10 +1,9 @@
-import {NgRedux, select} from '@angular-redux/store';
-import {API_REQUEST_ERROR, API_REQUEST_SUCCESS} from '../../redux/actions';
-import {HttpClient} from '@angular/common/http';
-import {IAppState} from '../../redux/store';
+import { NgRedux, select } from '@angular-redux/store';
+import { API_REQUEST_ERROR, API_REQUEST_SUCCESS } from '../../redux/actions';
+import { HttpClient } from '@angular/common/http';
+import { IAppState } from '../../redux/store';
 
 export abstract class BaseApiService {
-
   /**
    * constructor
    *
@@ -13,9 +12,8 @@ export abstract class BaseApiService {
    */
   constructor(
     protected httpClient: HttpClient,
-    protected ngRedux: NgRedux<IAppState>,
-  ) {
-  }
+    protected ngRedux: NgRedux<IAppState>
+  ) {}
 
   /**
    * loadData
@@ -37,7 +35,9 @@ export abstract class BaseApiService {
    * @param callbackError
    */
   addData(resource, data, callbackSuccess, callbackError) {
-    this.httpClient.post(resource, data).subscribe(callbackSuccess, callbackError);
+    this.httpClient
+      .post(resource, data)
+      .subscribe(callbackSuccess, callbackError);
   }
 
   /**
@@ -60,7 +60,9 @@ export abstract class BaseApiService {
    * @param callbackError
    */
   updateData(resource, data, callbackSuccess, callbackError) {
-    this.httpClient.put(resource, data).subscribe(callbackSuccess, callbackError);
+    this.httpClient
+      .put(resource, data)
+      .subscribe(callbackSuccess, callbackError);
   }
 
   /**
@@ -81,7 +83,7 @@ export abstract class BaseApiService {
    */
   callbackSuccess(res) {
     // Request Success Callback
-    this.ngRedux.dispatch({type: API_REQUEST_SUCCESS});
+    this.ngRedux.dispatch({ type: API_REQUEST_SUCCESS });
   }
 
   /**
@@ -91,7 +93,6 @@ export abstract class BaseApiService {
    */
   callbackError(err) {
     // Request Failure Callback
-    this.ngRedux.dispatch({type: API_REQUEST_ERROR});
+    this.ngRedux.dispatch({ type: API_REQUEST_ERROR });
   }
-
 }

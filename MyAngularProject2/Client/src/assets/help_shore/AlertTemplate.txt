@@ -1,0 +1,2 @@
+id:	name:*	imono:	description:*	probablecauses:	systemxid:*	systemname:	isvesselalert:	isactive:	alerttype:*	alertpriorityxid:*	alertpriority:	delay:*	lastdelay:*	companyxid:	createddate:	formulastring:	uiformulastructure:*	createdbyid:	createdby:	usertype:	modifiedby:	modifieddate:	isshore:	Edit:	Delete:	categoryCssClass:	select:	alertroleModel
+	Alert Name		New Alert Creation		1				OPRN	1	Critical            	0	0			ME_RPM>10	"tag:ME_RPM,op:>,num:1,num:0"											[]

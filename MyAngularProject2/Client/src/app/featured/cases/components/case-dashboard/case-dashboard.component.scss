@@ -1,0 +1,35 @@
+// Core variables and mixins
+@import "../../../../../assets/scss/functions";
+@import "../../../../../assets/scss/variables";
+@import "../../../../../assets/scss/mixins";
+@import "../../../../../assets/scss/custom";
+@import "../../../../../assets/scss/custom-mixins";
+
+/*
+.case-card {
+  margin: 0 auto;
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+  !*
+  color: #fff;
+  *!
+  color: #293648;
+  line-height: 1.3;
+  background: $bg-main;
+  word-break: break-word;
+  overflow-x: hidden;
+}
+*/
+
+.case-card-header {
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+  color: #293648;
+}
+
+.case-card-block {
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+  color: #293648;
+}
+

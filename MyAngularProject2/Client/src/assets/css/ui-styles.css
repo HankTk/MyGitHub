@@ -1,0 +1,383 @@
+@charset "utf-8";
+/* CSS Document */
+/*font-family: 'Dosis', sans-serif;font-family: 'Play', sans-serif;font-family: 'Abel', sans-serif;*/
+
+html,body {margin:0; padding:0; background:#222e3d !important; color:#fff;font-family: 'Exo', sans-serif; overflow:hidden}
+html,body, .mapContainer, .gridMask{width:100%; height:100%}
+*{margin:-1px; padding:0}
+.clearfix {clear:both}
+.displayNone{display:none}
+a {color:#ccc}
+a.themeBtn {background:#334258; padding:15px 40px; text-align:center; color:#edcb8e!important; font-size:36px; text-decoration:none; margin:0 auto; overflow:auto; display:inline-block;}
+a.themeBtn span, a.themeBtn label {font-size:12px; color:#b2c1cf; display:block}
+.opqBG-DarkBlue {background:url(../img/smartship-opq-bg.png) repeat 0 0;}
+.opqBG-LightBlue {background:url(../img/smartship-opq-bg.png) repeat 0 0;}
+.mapContainer {background:url(../img/smartship-map2.png) no-repeat center center fixed; background-size:contain;}
+.gridMask {background:url(../img/smartship-map-grid.png) repeat 0 0; position:relative}
+.appLogo {position:absolute; width:100px; height:23px; background:url(../img/smartship-beta-logo.png) no-repeat 0 0; top:15px; left:50px}
+
+.pageHeader, .pageHeader label, .pageHeader span.caseNode  {float:left;}
+.pageHeader{margin:60px 0 0 80px;}
+.pageHeader label {font-size:24px; color:#ccc;padding:0; margin:0;}
+.pageHeader span.caseNode {width:25px; height:25px; border-radius:60px; background:#97c2fc;border:solid 1px #2b7be7; margin:0 10px 0 0; animation:none}
+
+.shipViewWrap {/*position:absolute; top:0px; width:1300px;left:50%;transition:all .6s ease-in; margin-left:-650px*/}
+
+.shipWireframe {background:url(../img/emilebulker-wireframe.png) no-repeat center bottom; /*width:1300px;height:300px;*/background-size:contain;  position:relative;}
+.shipWireframe span {float:left}
+.shipWireframe a {/*border:solid 1px #617faf;*/ background: rgba(136,162,204,0.15); transition:ease .2s all; text-indent:-99999px; overflow: hidden; display:table-cell;}
+.shipWireframe a:hover{animation:blur 1s ease-in infinite;box-shadow:0px 0px 4px #fff; background: rgba(136,162,204,0.3);text-align:center; color:#fff; text-decoration:none; text-indent:0px; font-size:9px!important; vertical-align:middle}
+
+.cargo1, .cargo2, .cargo3, .cargo4, .cargo5, .cargo6, .hull, .engineRoom, .camera, .navSys, .cargoControl, .propellar {position:absolute;}
+.cargo1, .cargo2, .cargo3, .cargo4, .cargo5, .cargo6{top:175px; width:100px; height:60px;} 
+.cargo1 {left:369px}
+.cargo2 {left:485px}
+.cargo3 {left:610px}
+.cargo4 {left:725px;/*background:rgba(255,0,0,0.1)!important*/}
+.cargo4:hover {left:725px;/*background:rgba(255,0,0,0.3)!important*/}
+.cargo5 {left:845px}
+.cargo6 {left:960px}
+.hull {width:500px; height:20px;left:369px; top:240px}
+.engineRoom {width:115px; height:50px; left:205px; top:195px}
+
+.navSys, .cargoControl, .propellar {background::red}
+.navSys {left:278px; top:80px;width:50px; height:20px;}
+.cargoControl {left:204px; top:108px;width:120px; height:50px;}
+.propellar {left:150px; top:220px;width:50px; height:60px;}
+
+.camera {background:url(../img/smartship-camera.png) no-repeat 0 -55px!important; width:45px; height:40px; transition:all .3s ease; border:none!important}
+.camera:hover {background:url(../img/smartship-camera.png) no-repeat 0 0px!important; width:58px; height:51px; border:none!important;animation:none!important; opacity:.8;box-shadow:none!important   /*box-shadow:none!important*/}
+
+.camera1 {left:130px; top:50px;}
+.camera2 {left:200px; top:-10px;}
+.camera3 {left:280px; top:-35px;}
+.camera4 {left:370px; top:80px;}
+.camera5 {left:620px; top:50px;}
+.camera6 {left:720px; top:60px;}
+.camera7 {left:870px; top:80px;}
+.camera8 {left:1080px; top:30px;}
+
+
+.dataGridWrap {width:450px; position:absolute; top:100px; right:100px;background:url(../img/smartship-opq-bg.png) repeat 0 0; padding:1px}
+.dataGridWrap span, .dataGridWrap label {float:left; box-sizing:border-box;  font-size:12px;padding:8px 15px; margin-bottom:1px; opacity:.9; transition:all ease .5s;}
+.dataGridWrap span:hover, .dataGridWrap label:hover {opacity:1; background:#68c0ff!important; cursor:pointer}
+.dataGridWrap span {background:url(../img/smartship-opq-bg2.png) repeat 0 0; width:200px;color:#939eb0; animation:none }
+.dataGridWrap label {background:url(../img/smartship-opq-bg.png) repeat 0 0; width:250px; color:#fff; }
+
+.searchTxtbox {width:30px; height:30px; padding:5px 20px 5px 0px; background: rgba(118,124,131,1); position:absolute; left:11px;top:130px; box-sizing:border-box; transition:all .3s ease-in; border:none; border-radius:30px}
+.searchTxtbox:focus {width:300px;border:solid 1px #6e757e; outline:none;background: rgba(130,137,144,0.5);  color:#fff; font-size:14px; font-weight:normal; text-indent:15px}
+
+.centerAligTable {width:100%; height:100%; border-collapse:collapse; position:absolute; z-index:1001}
+.centerAligTable td {border:none}
+.defectBallWrap {width:700px; height:670px; background:url(../img/defectlines.png) no-repeat center center; position:relative;     
+margin:70px 0 0 -100px;
+  -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+    -webkit-transform-origin: 50% 0 0;
+    -moz-transform-origin: 50% 0 0;
+    -ms-transform-origin: 50% 0 0;
+    transform-origin: 50% 0 0;}
+.defectBallWrap a:hover {opacity:1}
+.defectBallWrap a.active {}
+.defectBallWrap .hotspot-1, .defectBallWrap .hotspot-2, .defectBallWrap .hotspot-3, .defectBallWrap .hotspot-4, .defectBallWrap .hotspot-5, .defectBallWrap .hotspot-6, .defectBallWrap .hotspot-7, .defectBallWrap .hotspot-8, .defectBallWrap .hotspot-9, .defectBallWrap .hotspot-10, .defectBallWrap .hotspot-11, .defectBallWrap .hotspot-12, .defectBallWrap .hotspot-13, .defectBallWrap .hotspot{position:absolute; border-radius:200px;text-align:center; text-decoration:none; color:#fff; font-size:12px; opacity:0.8}
+.defectBallWrap .hotspot-1 {top:0px; left:200px; width:150px; height:150px; background:#4e4c59; line-height:160px}
+.defectBallWrap .hotspot-2 {top:160px; left:295px; width:70px; height:70px; background:#666571; line-height:70px}
+.defectBallWrap .hotspot-3 {top:30px; left:380px; width:135px; height:135px; background:#4e4c59; line-height:135px}
+.defectBallWrap .hotspot-4 {top:180px; left:420px; width:120px; height:120px; background:#5f5d6b; line-height:120px}
+.defectBallWrap .hotspot-5 {top:240px; left:555px; width:100px; height:100px; background:#4e4c59; line-height:100px}
+.defectBallWrap .hotspot-6 {top:350px; left:450px; width:160px; height:160px; background:#4e4c59; line-height:160px}
+.defectBallWrap .hotspot-7 {top:500px; left:370px; width:120px; height:120px; background:#5f5d6b; line-height:120px}
+.defectBallWrap .hotspot-8 {top:490px; left:175px; width:160px; height:160px; background:#4e4c59; line-height:160px}
+.defectBallWrap .hotspot-9 {top:515px; left:45px; width:120px; height:120px; background:#5f5d6b; line-height:120px}
+.defectBallWrap .hotspot-10 {top:390px; left:90px; width:100px; height:100px; background:#4e4c59; line-height:100px}
+.defectBallWrap .hotspot-11 {top:230px; left:15px; width:160px; height:160px; background:#4e4c59; line-height:160px}
+.defectBallWrap .hotspot-12 {top:130px; left:140px; width:120px; height:120px; background:#666571; line-height:135px}
+.defectBallWrap .hotspot {top:243px; left:185px; width:240px; height:240px; background:#4e4851; line-height:240px; }
+.defectBallWrap .hotspot select {background:#443e47; border:none; width:200px; margin:0 auto; color:#fff; text-align:center; border-radius:30px; font-size:18px; padding:10px}
+
+#hotspot-events {display:none}
+#hotspot-events .content{background:url(../img/smartship-opq-bg.png) repeat 0 0; width:400px; height:200px; float:left; margin:10px}
+
+.tabActive
+.tabInactive{float:left;}
+.tabContent, .tabWrap  {position:absolute}
+.tabContent, 
+.tabWrap {bottom:0; left:0; right:0; height:50px;} 
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+#popContainer, #popContainer2, #popContainer3 {position: absolute;z-index: 200;display:none;}
+#popContainer {top:60px;left:100px; right:100px;}
+#popContainer2 { background:url(../img/smartship-opq-bg.png) repeat 0 0;bottom:30px; right:80px; left:auto; top:auto;padding:30px; width:440px; height:240px; text-align:center;border:solid 3px #a7b5c5; border-left:none; border-right:none}
+#popContainer3 {top:560px;left:30px; right:30px; bottom:30px; overflow:auto;background: rgba(42,54,70,0.9); padding:30px; box-sizing:border-box}
+#popContainer3  h1{color:#edcb8e; font-size:18px}
+/*animation:blur .9s ease-in infinite;box-shadow:0px 0px 1px #6b7c91, 0px 0px 1px #6b7c91; */
+#popContainer2  span, #popContainer2  label {display:block}
+.popLeft, .popRight {border:solid 3px #a7b5c5; border-left:none; border-right:none;background:url(../img/smartship-opq-bg.png) repeat 0 0;min-height:140px; overflow:hidden; position:absolute;top:320px}
+
+.popLeft {width:140px;  padding:0px 30px;left:-70px; }
+.popRight {width:310px; left:120px}
+.popLeft .contentWrap {min-height:100px; padding:20px 0 0 0px;}
+.popRight .contentWrap {border-left:solid 1px #5e6a7a; min-height:100px; padding:0 0 0 30px; margin:20px 0 0 0; opacity:1}
+.popRight .contentWrap span {display:block; font-size:12px;}
+
+.popRightBottom {width:220px;padding:20px;background:#2c3746; bottom: -720px;left: 200px;opacity: 0.7;padding: 20px;position: absolute;}
+
+.pop1, .pop2, .pop3, .pop4{position: absolute;bottom:-490px;}
+.pop1 td *, .pop2 td *, .pop3 td *, .pop4 td * {font-size:11px!important}
+.pop1 {width:240px;padding:10px;background:#2c3746;left:440px;}
+.pop2 {width:240px;padding:10px;background:#2c3746;left:710px;}
+.pop3 {width:240px;padding:10px;background:#2c3746;left:980px;}
+.pop4 {width:240px;padding:10px;background:#2c3746;left:1300px;}
+.pop1 
+div.reAlert, a.reAlert {text-align:center;color:red; }
+div.reAlert{font-size:1.8em;font-weight:700;bottom:240px; right:20px;animation: blink 1s infinite; }
+a.reAlert{font-size:1.2em;font-weight:700;top:53px; right:-25px;/*animation: blink 1s infinite;*/}
+/*animation:blur .75s ease-out infinite;text-shadow:0px 0px 5px #fff,0px 0px 7px #fff; letter-spacing: -7px;*/
+
+/*.dot {
+    animation: 3s ease-out 0s normal none infinite running pulse;background:transparent none repeat scroll 0 0 ;border: 10px solid #d2ebf4;border-radius: 60px;height:30px;left: 46px;opacity: 0;position: absolute;top: 46px;width: 80px;z-index: 1}*/
+
+.pulse-button {
+  width:8px;height:8px;border: none;border-radius: 50%;background:#c4cdd8;cursor: pointer; transition:all .2s ease;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 0);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 0);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 0);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 0);
+}
+.pulse-button:hover 
+{
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none; width:10px; height:10px;
+}
+
+.ship1 {position:absolute; top:180px; left:80px;box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.9);}
+.ship2 {position:absolute; top:220px; left:580px;box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);}
+.ship3 {position:absolute; top:50px; left:580px;box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);}
+.ship4 {position:absolute; top:520px; left:250px;box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);}
+/*background: #e84c3d;*/
+
+
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+
+@keyframes blur{
+  from{
+      box-shadow:0px 0px 1px #93a1b3,
+      0px 0px 1px #93a1b3, 
+      0px 0px 2.5px #93a1b3,
+      0px 0px 2px #93a1b3,
+      0px 0px 2px #93a1b3,
+      0px 0px 2px #93a1b3,
+      0px 0px 2px #93a1b3,
+      0px 0px 2px #93a1b3,
+      0px 0px 5px #93a1b3,
+      0px 0px 5px #93a1b3,
+      0px 0px 5px #7B96B8,
+      0px 0px 1px #7B96B8,
+      0px 1px 1px #7B96B8,
+      0px 1px 1px #7B96B8,
+      0px 1px 1px #7B96B8,
+      0px 1px 1px #7B96B8,
+      0px -1px 1px #7B96B8,
+      0px -1px 1px #7B96B8;}
+}
+
+/*.pulses {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #3d4957;
+  }
+
+  100% {
+    background-color:Red;
+  }
+}*/
+
+p{
+  white-space: nowrap;width:100%; overflow:hidden;animation: type 1s steps(10, end);margin:0 0 5px 0; 
+}
+  /*font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;width: 30em;overflow: hidden;*/
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+
+/*span{
+  animation: blink 1s infinite;
+}*/
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+.rowDataWrap {
+  padding:20px 20px 20px 280px;
+  position:absolute;
+  /*right:50px;
+  left:50px;
+  top:50px;
+  bottom:30px;*/
+  overflow:auto;
+  background:url(../img/smartship-opq-bg.png) repeat 0 0;
+  height:inherit;
+}
+
+.chartB {
+  top: 231px;
+}
+.chartC {
+  top: 333px;
+}
+.graph_header{
+  color:#88a2cc;
+}
+.sensor_select_form{
+  padding: 20px;
+  text-align: center;
+  height:inherit;
+}
+
+.iframe_style{
+  border-width: 0px;
+}
+/*table, th, td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+#systems{
+  margin-left: 300px;
+  margin-top: 100px;
+}
+#systems th,td{
+  padding:30px !important;
+}
+
+#sensor_select option{
+  font-size:11px;
+}
+*/
+.ss-GridWrap {position:absolute;top:125px; left:100px; right:100px;}
+.ss-GridWrap table {width:100%}
+.ss-GridWrap table td {background:url(../img/smartship-opq-bg.png) repeat 0 0; border-bottom:solid 1px #111; padding:5px 10px; color:#9ba5b4}
+.ss-GridWrap table th {background: rgba(255, 255, 255, 0.1); border-bottom:solid 1px #111; padding:20px 10px; text-align:left}
+table, th, td {
+    border-collapse: collapse;
+}
+.redAlertText14 {color:red;animation: blink .9s infinite;font-size:14px;font-weight:bold!important; color:red!important}
+div.redAlert, a.redAlert {text-align:center;color:red; background-repeat:no-repeat!important; }
+div.redAlert{font-size:1.8em;font-weight:700;bottom:240px; right:20px;animation: blink 1s infinite;}
+ a.redAlert {margin:0 3px}
+
+.configMenu {position:absolute; top:20px; right:20px;}
+.dropbtn {
+    background-color: #8c8068;
+    color: white;
+    padding:3px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(84, 98, 116, 0.1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color:#fff;
+    padding:5px 15px;
+    text-decoration: none;
+    display: block; font-size:12px
+}
+
+.dropdown-content a:hover { background-color:rgba(84, 98, 116, 0.5)}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #a69c87;
+}

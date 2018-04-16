@@ -1,19 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "/assets/css/owl.carousel.css";
+@import "/assets/scss/styles.scss";
+@import "/assets/scss/sidebar.scss";
+
+
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /*
-  padding-top: 5rem;
-  */
-  background-color: #F0F0F0;
-}
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
-}

@@ -1,0 +1,432 @@
+// Core variables and mixins
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "custom";
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius; 
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+} 
+
+.form-check-inline .form-check-label{
+    padding-left: 15px;
+    input[type="radio"], input[type="checkbox"]{
+        margin-top: 3px;
+        margin-right: 5px;
+    }
+}
+.form-check-inline .form-check-label:first-child{
+    padding-left: 0;
+}
+.form-check-inline + .form-check-inline{
+    margin-left: 10px;
+}
+.sidebar-alert .datepicker-container .datepicker-input-container .datepicker-input-icon {
+    display: inline-block;
+    background: lighten($bg-main, 60%);
+    padding: 7px;
+    /* margin-top: 2px; */
+    vertical-align: bottom;
+    border-radius: 3px;
+    height: 29px;
+}
+.sidebar-alert .datepicker-container .datepicker-input-container .datepicker-input {
+    background: lighten($bg-main, 60%);
+    padding: 5px 8px;
+    width: 100% !important; 
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    @include border-radius(3px);
+    text-align: left !important;
+    
+}
+.datepicker-input-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.datepicker-container{
+    display: inline-block;
+    background: 0 0;
+    width: 100%;
+}
+
+.datepicker-input-container{
+    padding-right: 20px;
+    width: 100%;
+    position: relative;
+} 
+.sidebar-alert {
+    width: 290px;
+    position: fixed;
+    top: 182px;
+    bottom: 0;
+    left: 0;
+    border-right: 1px solid lighten($bg-main, 12%);
+    -moz-box-shadow: inset -2px 0px 6px -3px rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: inset -2px 0px 6px -3px rgba(255, 255, 255, 0.4);
+    box-shadow: inset -2px 0px 6px -3px rgba(255, 255, 255, 0.4);
+    .alert-filter {
+        background: lighten($bg-main, 7%);
+        padding: 5px 10px;
+        .input-group-btn{
+            .btn{
+            background: lighten($bg-main, 15%);
+            font-size: 25px;
+            line-height: 21px;
+            color: #fff;
+            }
+        }
+        .filter-dropdown{ 
+            background: $bg-main;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            right: 1px;
+            bottom: 0px;
+            z-index: 9;
+            right: 0;
+            hr{
+                border-top:1px solid lighten($bg-main, 10%);
+            }
+             .slimscroll-inner-wrapper{
+                 padding: 15px;
+            }
+        }
+        .search-field-wrapper {
+            position: relative;
+            float: left;
+            margin-top: 2px;
+            &:after {
+                font-family: FontAwesome;
+                content: "\f002";
+                position: absolute;
+                top: 4px;
+                left: 5px;
+                color: lighten($bg-main, 25%);
+                font-size: 11px;
+            }
+            .fa-filter {
+                position: absolute;
+                right: 5px;
+                top: 4px;
+                font-size: 11px;
+                color: lighten($bg-main, 25%);
+                cursor: pointer;
+                &.active{
+                    color: $link-hover-color;
+                }
+            }
+            .search-field {
+                background: darken($bg-main, 2%);
+                border: 0;
+                height: 20px;
+                border-radius: 8px;
+                width: 145px;
+                outline: none;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: lighten($bg-main, 80%);
+                font-size: 11px;
+                vertical-align: text-top;  
+                display: block;
+            }
+        }
+        .btn-main.btn-sm { 
+            font-size: 11px;
+            padding: 3px 6px;
+        }
+        .btn-main.btn-sm.add {
+            padding: 6px 10px 3px 10px;
+        }
+    }
+    .panel-heading {
+        padding: 5px 10px;
+        font-size: 12px;
+        webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        small {
+            padding-top: 0px;
+            cursor: pointer;
+        }
+        .fa {
+            padding-top: 0px;
+        }
+    }
+    .panel {
+        @include border-radius(2px);
+        margin-bottom: 10px; 
+        // border-top: 0;
+        webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        animation: customFadeInDown 0.5s forwards;
+        -webkit-animation: customFadeInDown 0.5s forwards;
+       
+        small {
+            font-size: 10px;
+        }
+        .panel-body {
+            padding: 6px 10px;
+            line-height: 1.1 !important;
+            p {
+                line-height: 1.35 !important;
+                overflow: hidden;
+            }
+        }
+        .icon-warning {
+            width: 15px;
+            height: 15px;
+            @include border-radius(50%);
+            float: left;
+            text-align: center;
+            line-height: 15px;
+            color: #fff;
+            margin-right: 5px;
+            font-size: 10px;
+            font-weight: bold;
+            // margin-top: 5px;
+        }
+        &.active{
+            border-left: 2px solid $color-main !important;
+        }
+    }
+    .panel-heading-main {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+}
+.alert-view-filter {
+    /*
+    width: 290px;
+    position: fixed;
+    top: 227px;
+    bottom: 0;
+    left: 0;
+    border-right: 1px solid lighten($bg-main, 12%);
+    -moz-box-shadow: inset -2px 0px 6px -3px rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: inset -2px 0px 6px -3px rgba(255, 255, 255, 0.4);
+    box-shadow: inset -2px 0px 6px -3px rgba(255, 255, 255, 0.4);
+    */
+    .alert-filter {
+        background: lighten($bg-main, 7%);
+        padding: 5px 10px;
+        .filter-dropdown{
+            background: $bg-main;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            right: 1px;           
+            bottom: 0px;
+            z-index: 9;
+            right: 0;
+            border-right:1px solid lighten($bg-main, 10%);
+            hr{
+                border-top:1px solid lighten($bg-main, 10%);
+            }
+            .slimscroll-inner-wrapper{
+                 padding: 15px;
+            }
+        }
+        .search-field-wrapper {
+            position: relative;
+            float: left;
+            &:after {
+                font-family: FontAwesome;
+                content: "\f002";
+                position: absolute;
+                top: 4px;
+                left: 5px;
+                color: lighten($bg-main, 25%);
+                font-size: 11px;
+            }
+            .fa-filter {
+                position: absolute;
+                right: 6px;
+                top: 4px;
+                font-size: 11px;
+                color: lighten($bg-main, 25%);
+                cursor: pointer;
+                &.active{
+                    color: $link-hover-color;
+                }
+            }
+            .search-field {
+                background: darken($bg-main, 2%);
+                border: 0;
+                height: 20px;
+                border-radius: 8px;
+                width: 145px;
+                outline: none;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: lighten($bg-main, 80%);
+                font-size: 11px;
+                vertical-align: text-top;
+            }
+        }
+        /*
+            TODO: In efficient, we will fix later.
+         */
+        .search-field-wrapper-nofloat {
+            position: relative;
+            &:after {
+                font-family: FontAwesome;
+                content: "\f002";
+                position: absolute;
+                top: 4px;
+                left: 5px;
+                color: lighten($bg-main, 25%);
+                font-size: 11px;
+            }
+            .fa-filter {
+                position: absolute;
+                right: 6px;
+                top: 4px;
+                font-size: 11px;
+                color: lighten($bg-main, 25%);
+                cursor: pointer;
+            }
+            .search-field {
+                background: darken($bg-main, 2%);
+                border: 0;
+                height: 20px;
+                border-radius: 8px;
+                width: 145px;
+                outline: none;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: lighten($bg-main, 80%);
+                font-size: 11px;
+                vertical-align: text-top;
+            }        }
+        .btn-main.btn-sm {
+            font-size: 11px;
+            padding: 3px 6px;
+        }
+        .btn-main.btn-sm.add {
+            padding: 6px 10px 3px 10px;
+        }
+    }
+    .panel-heading {
+        padding: 5px 10px;
+        font-size: 12px;
+        small {
+            padding-top: 0px;
+            cursor: pointer;
+        }
+        .fa {
+            padding-top: 0px;
+        }
+    }
+    .panel {
+        @include border-radius(2px);
+        margin-bottom: 10px;
+        
+        small {
+            font-size: 10px;
+        }
+        .panel-body {
+            padding: 6px 10px;
+            line-height: 1.1 !important;
+            p {
+                line-height: 1.2 !important;
+                overflow: hidden;
+            }
+        }
+        .icon-warning {
+            width: 15px;
+            height: 15px;
+            @include border-radius(50%);
+            float: left;
+            text-align: center;
+            line-height: 15px;
+            color: #fff;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+    }
+    .panel-heading-main {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+}
+.alert-view-filter .datepicker-container .datepicker-input-container .datepicker-input-icon {
+    display: inline-block;
+    background: lighten($bg-main, 60%);
+    padding: 7px;
+    /* margin-top: 2px; */
+    vertical-align: bottom;
+    border-radius: 3px;
+    height: 29px;
+}
+.alert-view-filter .datepicker-container .datepicker-input-container .datepicker-input {
+    background: lighten($bg-main, 60%);
+    padding: 5px 8px;
+    width: 100% !important;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    @include border-radius(3px);
+    text-align: left !important;
+
+}
+
+.close-button-alert{
+    color:#fff!important;
+}
+
+
+
+ @-webkit-keyframes customFadeInDown {
+    0% { 
+        opacity:0;
+        transform:translateY(-20px);
+     }
+     /*60% { 
+        
+        transform:translateY(10px);
+     }
+    80% { 
+        
+        transform:translateY(-5px);
+     }*/
+     100% { 
+        opacity:1;
+        transform:translateY(0px);
+     }
+}
+
+@keyframes customFadeInDown {
+    0% { 
+        opacity:0;
+        transform:translateY(-20px);
+     }
+     /*60% { 
+        
+        transform:translateY(10px);
+     }
+    80% { 
+       
+        transform:translateY(-5px);
+     }*/
+     100% { 
+        opacity:1;
+        transform:translateY(0px);
+     }
+}
+
+.ss-DataGridWrap {padding:0px;overflow: auto; margin:0 0 20px 0; }
+.ss-DataGridWrap table {width:100%;}
+

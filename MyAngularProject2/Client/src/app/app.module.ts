@@ -2,33 +2,44 @@
  * AppModule
  *
  */
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import {FormsModule} from '@angular/forms';
-import {AppRoutingModule} from './app-routing.module';
-import {HttpClientModule} from '@angular/common/http';
-import {NgRedux, NgReduxModule, DevToolsExtension} from '@angular-redux/store';
-import {WebSocketService} from './sockets/websocket.service';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import {
+  NgRedux,
+  NgReduxModule,
+  DevToolsExtension
+} from '@angular-redux/store';
+import { WebSocketService } from './sockets/websocket.service';
+import { ToastyModule } from 'ng2-toasty';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import {AppComponent} from './app.component';
-import {IAppState, rootReducer, INITIAL_STATE} from './redux/store';
+import { AppComponent } from './app.component';
+import { IAppState, rootReducer, INITIAL_STATE } from './redux/store';
 
-import {AuthenticationService} from './shared/services/Authentication.service';
-import {AuthInterceptorService} from './shared/services/AuthInterceptor.service';
+import { AuthenticationService } from './shared/services/Authentication.service';
+import { AuthInterceptorService } from './shared/services/AuthInterceptor.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import {LoginPage} from './featured/authentication/pages/login/login.page';
+import { LoginPageComponent } from './featured/authentication/pages/login/login.page';
+import { LogoutComponent } from './featured/authentication/components/logout/logout.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { AuthGuard } from './shared/guards/authGuard.guard';
+import { AppPreloadingStrategy } from './shared/strategies/appLoading.strategy';
 
 /**
  * AppModule - NgModule
  *
  */
 @NgModule({
-
   declarations: [
     AppComponent,
-    LoginPage
+    LoginPageComponent,
+    LogoutComponent,
+    HeaderComponent
   ],
 
   imports: [
@@ -37,12 +48,18 @@ import {LoginPage} from './featured/authentication/pages/login/login.page';
     FormsModule,
     HttpClientModule,
     NgReduxModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+    ToastyModule,
+    NgbModule.forRoot(),
+    ServiceWorkerModule.register('/ngsw-worker.js', {
+      enabled: environment.production
+    })
   ],
 
   providers: [
     WebSocketService,
     AuthenticationService,
+    AuthGuard,
+    AppPreloadingStrategy,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
@@ -50,10 +67,7 @@ import {LoginPage} from './featured/authentication/pages/login/login.page';
     }
   ],
 
-  bootstrap: [
-    AppComponent
-  ]
-
+  bootstrap: [AppComponent]
 })
 
 /**

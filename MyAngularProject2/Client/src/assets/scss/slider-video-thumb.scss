@@ -1,0 +1,76 @@
+// Core variables and mixins
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "custom";
+
+.transition-timing{
+     -webkit-transition: all 0.25s ease-in-out;
+            -moz-transition: all 0.25s ease-in-out;
+            -o-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+}
+
+.carousel-video-thumb{
+        .video-thumb-wrapper {
+            background: darken($bg-main, 5%);
+            border: 1px solid lighten($bg-main, 10%);
+            .video-thumb {
+                position: relative;
+                height: 115px;
+                overflow: hidden;
+
+                > img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                }
+                .video-thumb-control {
+                    width: 60px;
+                    height: 60px;
+                    background-position: top left;
+                    background: url(/assets/images/owl.video.play.png) no-repeat;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    cursor: pointer;
+                    @extend .transition-timing;
+                }
+
+                &.active {
+                    .video-thumb-control {
+                        background-position: bottom left;
+                        opacity: 0;
+                    }
+                }
+                &.active:hover {
+                    .video-thumb-control,  .full-screen-icon{ 
+                        opacity: 1;
+                    }
+                }
+                .full-screen-icon{
+                    margin-left: 0;
+                    background: rgba(0,0,0,0.5) center center;
+                    padding: 5px;
+                    background-image: url(/assets/images/full-screen-icon.png);
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    opacity: 0;
+                     @extend .transition-timing;
+                } 
+            }
+            h4 {
+                text-align: center;
+                color: $brand-primary;
+                margin-bottom: 5px;
+            }
+        }
+    }
