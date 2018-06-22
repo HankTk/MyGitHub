@@ -1,0 +1,60 @@
+.baseContainer {
+  background-color: #CCCCCC;
+  display: flex;
+  flex-direction: column;
+}
+
+.controlArea {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.controlAreaFiller{display: flex;}
+/*
+.filler{flex-grow:1; text-align:center}
+*/
+
+.controlAreaLeft {
+}
+.controlAreaCenter {
+  display: inline-flex;
+}
+.controlAreaRight {
+}
+
+.tableAare {
+  margin-top: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.mainTable {
+  width: 100%;
+  height: 100%;
+}
+
+.messageArea {
+  color: #FF0000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.facesmile {
+  background-image: url("../../../assets/images/facesmile.gif");
+}
+
+.facedead {
+  background-image: url("../../../assets/images/facedead.gif");
+}
+
+.facewin {
+  background-image: url("../../../assets/images/facewin.gif");
+}
+
+.faceclock {
+  background-image: url("../../../assets/images/faceclock.gif");
+}

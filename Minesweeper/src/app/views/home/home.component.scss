@@ -1,0 +1,26 @@
+.homeContainer {
+  background-color: #AAAAAA;
+  color: #5561ff;
+  height: 100%;
+  width: 100%;
+}
+
+.homeContentContainer {
+  background-color: #BBBBBB;
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  /*
+  grid-gap: 10px;
+  */
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.minesweeperContainer {
+  background-color: #BBBBBB;
+  color: #5561ff;
+  grid-column: 1 / -1;
+  height: 100%;
+  width: 100%;
+}
