@@ -32,7 +32,7 @@ let AccountSchema = new Schema({
         }],
         default: ['active']
     },
-    Created_date: {
+    created_date: {
         type: Date,
         default: Date.now
     }
