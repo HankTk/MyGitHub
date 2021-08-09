@@ -2,456 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7be46445-8f3f-4c14-9d6c-4e08f20c47ec" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/.angular-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/e2e/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/e2e/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/electron-builder.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/logo-angular.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/logo-electron.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/components/panel/panel.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/components/panel/panel.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/components/panel/panel.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/directives/webview.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/providers/electron.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/services/menu.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/services/messageEvent.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/counter/counter.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/counter/counter.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/counter/counter.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/home/home.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/minesweeper/minesweeper.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/minesweeper/minesweeper.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/minesweeper/minesweeper.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/options/options.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/options/options.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/options/options.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/tile/tile.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/tile/tile.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/tile/tile.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/timer/timer.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/timer/timer.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/app/views/timer/timer.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/html/options.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/i18n/en.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/blank.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bombdeath.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bombdisarmed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bombflagged.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bombmisflagged.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bombquestion.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bombrevealed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/borderbl.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/borderbottom.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/borderbr.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/borderjointl.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/borderjointr.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/borderlr.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/borderlr2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/borderright.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bordertb.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bordertl.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/bordertr.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/checked.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/faceclock.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/facedead.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/faceooh.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/facepirate.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/facesmile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/facewin.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/minesweeper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves-.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/moves9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/notchecked.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/open8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadow8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/shadowbomb.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time-.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/assets/images/time9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/environments/index.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/environments/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/favicon.256x256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/favicon.icns" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minesweeper/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/models/accountModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/models/accountModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/alert.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/button.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/carousel.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/collapse.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/dropdown.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/modal.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/popover.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/popover.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/scrollspy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/scrollspy.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/tab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/tab.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/tooltip.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/dist/util.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/popover.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/scrollspy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/tab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/js/src/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_button-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_close.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_custom-forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_images.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_jumbotron.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_print.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_root.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_transitions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/bootstrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_background-variant.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_grid-framework.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_hover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_nav-divider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_navbar-align.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_screen-reader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_table-row.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_text-hide.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/mixins/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_align.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_borders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_embed.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_flex.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_position.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_sizing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/bootstrap/scss/utilities/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/AUTHORS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/dist/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/dist/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/dist/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/dist/jquery.slim.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/external/sizzle/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/external/sizzle/dist/sizzle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/external/sizzle/dist/sizzle.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax/jsonp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax/load.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax/parseXML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax/var/location.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax/var/nonce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax/var/rquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/ajax/xhr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/attributes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/attributes/attr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/attributes/classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/attributes/prop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/attributes/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/attributes/val.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/callbacks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/DOMEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/access.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/camelCase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/nodeName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/parseHTML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/ready-no-deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/ready.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/readyException.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/stripAndCollapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/toType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/addGetHookIf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/adjustCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/curCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/showHide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/var/cssExpand.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/var/getStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/var/isHiddenWithinTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/var/rboxStyle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/css/var/swap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/data/Data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/data/var/acceptData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/data/var/dataPriv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/data/var/dataUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/deferred/exceptionHook.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/deprecated.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/effects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/effects/Tween.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/effects/animatedSelector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/event/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/event/alias.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/event/focusin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/event/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/event/trigger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/exports/amd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/exports/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/buildFragment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/getAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/var/rtagName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/manipulation/wrapMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/offset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/queue/delay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/selector-native.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/selector-sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/serialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/traversing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/traversing/findFilter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/traversing/var/dir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/traversing/var/siblings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/ObjectFunctionString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/arr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/class2type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/concat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/document.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/documentElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/fnToString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/getProto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/hasOwn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/indexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/isFunction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/isWindow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/pnum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/push.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/rcssNum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/rnothtmlwhite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/var/toString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/jquery/src/wrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/esm/popper-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/esm/popper-utils.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/esm/popper-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/esm/popper-utils.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/esm/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/esm/popper.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/esm/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/esm/popper.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/popper-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/popper-utils.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/popper-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/popper-utils.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/popper.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/popper.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/umd/popper-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/umd/popper-utils.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/umd/popper-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/umd/popper-utils.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/umd/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/umd/popper.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/umd/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/dist/umd/popper.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VivLabProject/dist/node_modules/popper.js/package.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TypeScriptApiProject/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TypeScriptApiProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TypeScriptApiProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TypeScriptApiProject/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TypeScriptApiProject/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TypeScriptApiProject/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TypeScriptApiProject/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db.json" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/views/ViewMain.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/views/account/AccountList.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -476,6 +39,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1028" />
   </component>
+  <component name="ProjectId" id="1nXIwOwb97shaSEXQC5fXnoViTM" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -565,33 +129,43 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -609,6 +183,7 @@
       <projects_view />
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -625,6 +200,9 @@
       <workItem from="1519268532173" duration="1000" />
       <workItem from="1519268536881" duration="11000" />
       <workItem from="1549566972812" duration="16000" />
+      <workItem from="1611530255490" duration="937000" />
+      <workItem from="1611856695059" duration="1713000" />
+      <workItem from="1617045165041" duration="2295000" />
     </task>
     <servers />
   </component>
@@ -673,7 +251,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/src/views/ViewMain.js">

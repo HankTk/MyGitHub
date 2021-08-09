@@ -1,0 +1,5 @@
+@import 'gx-daterangepicker-content/gx-daterangepicker-content.theme.scss';
+
+@mixin gx-daterangepicker-theme($test-app-theme) {
+  @include gx-daterangepicker-theme($test-app-theme);
+}
