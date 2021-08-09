@@ -1,6 +1,0 @@
-{
-    "bundlerOptions": {
-        "entryFile": "./src/lib/gx-daterangepicker-content/gx-daterangepicker-content.theme.scss",
-        "outFile": "./dist/gx-daterangepicker/gx-daterangepicker.theme.scss"
-    }
-}
