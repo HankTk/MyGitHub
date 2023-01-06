@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/material-ui": "^0.17.6",
     "@types/react-tap-event-plugin": "0.0.30",
-    "react-scripts": "0.9.5"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
